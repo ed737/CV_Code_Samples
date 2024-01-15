@@ -6,7 +6,7 @@
 #include <pthread.h>
 #include "Queue.h"
 #include "PPFunctions.h"
-#include "GenericFunctions.h"
+#include "CommonFunctions.h"
 
 #ifndef TRUE
 #define TRUE 1

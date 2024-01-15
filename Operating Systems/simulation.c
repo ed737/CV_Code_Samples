@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Queue.h"
-#include "GenericFunctions.h"
+#include "CommonFunctions.h"
 #include "PPFunctions.h"
 #include "SRTFFunctions.h"
 

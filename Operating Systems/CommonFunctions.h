@@ -1,6 +1,6 @@
 
-#ifndef GENERIC_FUNCTIONS_H
-#define GENERIC_FUNCTIONS_H
+#ifndef COMMON_FUNCTIONS_H
+#define COMMON_FUNCTIONS_H
 
 #include "Queue.h"
 

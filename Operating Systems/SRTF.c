@@ -5,7 +5,7 @@
 #include <string.h>
 #include "Queue.h"
 #include "SRTFFunctions.h"
-#include "GenericFunctions.h"
+#include "CommonFunctions.h"
 
 #ifndef TRUE
 #define TRUE 1

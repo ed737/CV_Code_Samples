@@ -4,7 +4,7 @@
 #include <string.h>
 #include <pthread.h>
 #include "SRTFFunctions.h"
-#include "GenericFunctions.h"
+#include "CommonFunctions.h"
 #include "Queue.h"
 
 #ifndef TRUE

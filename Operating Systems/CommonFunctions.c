@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include "CommonFunctions.h"
 #include "Queue.h"
 
 #ifndef TRUE
