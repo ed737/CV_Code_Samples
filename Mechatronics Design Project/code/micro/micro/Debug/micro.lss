@@ -1,0 +1,2054 @@
+
+micro.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         000000a8  00800200  00000a90  00000b24  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000a90  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000259  008002a8  008002a8  00000bcc  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000bcc  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000bfc  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000188  00000000  00000000  00000c3c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000025f2  00000000  00000000  00000dc4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000144d  00000000  00000000  000033b6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00001387  00000000  00000000  00004803  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000374  00000000  00000000  00005b8c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000c73  00000000  00000000  00005f00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000006a3  00000000  00000000  00006b73  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000130  00000000  00000000  00007216  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	78 c0       	rjmp	.+240    	; 0xf2 <__ctors_end>
+   2:	00 00       	nop
+   4:	95 c0       	rjmp	.+298    	; 0x130 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	93 c0       	rjmp	.+294    	; 0x130 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	91 c0       	rjmp	.+290    	; 0x130 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	8f c0       	rjmp	.+286    	; 0x130 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	8d c0       	rjmp	.+282    	; 0x130 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	8b c0       	rjmp	.+278    	; 0x130 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	89 c0       	rjmp	.+274    	; 0x130 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	87 c0       	rjmp	.+270    	; 0x130 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	85 c0       	rjmp	.+266    	; 0x130 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	83 c0       	rjmp	.+262    	; 0x130 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	81 c0       	rjmp	.+258    	; 0x130 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	7f c0       	rjmp	.+254    	; 0x130 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	7d c0       	rjmp	.+250    	; 0x130 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	7b c0       	rjmp	.+246    	; 0x130 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	79 c0       	rjmp	.+242    	; 0x130 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	77 c0       	rjmp	.+238    	; 0x130 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	f7 c2       	rjmp	.+1518   	; 0x634 <__vector_17>
+  46:	00 00       	nop
+  48:	73 c0       	rjmp	.+230    	; 0x130 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	71 c0       	rjmp	.+226    	; 0x130 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	6f c0       	rjmp	.+222    	; 0x130 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	6d c0       	rjmp	.+218    	; 0x130 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	6b c0       	rjmp	.+214    	; 0x130 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	69 c0       	rjmp	.+210    	; 0x130 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	67 c0       	rjmp	.+206    	; 0x130 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	65 c0       	rjmp	.+202    	; 0x130 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	63 c0       	rjmp	.+198    	; 0x130 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	61 c0       	rjmp	.+194    	; 0x130 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	5f c0       	rjmp	.+190    	; 0x130 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	8f c0       	rjmp	.+286    	; 0x194 <__vector_29>
+  76:	00 00       	nop
+  78:	5b c0       	rjmp	.+182    	; 0x130 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	59 c0       	rjmp	.+178    	; 0x130 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	57 c0       	rjmp	.+174    	; 0x130 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	55 c0       	rjmp	.+170    	; 0x130 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	53 c0       	rjmp	.+166    	; 0x130 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	51 c0       	rjmp	.+162    	; 0x130 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	4f c0       	rjmp	.+158    	; 0x130 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	4d c0       	rjmp	.+154    	; 0x130 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	4b c0       	rjmp	.+150    	; 0x130 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	49 c0       	rjmp	.+146    	; 0x130 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	47 c0       	rjmp	.+142    	; 0x130 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	45 c0       	rjmp	.+138    	; 0x130 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	43 c0       	rjmp	.+134    	; 0x130 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	41 c0       	rjmp	.+130    	; 0x130 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	3f c0       	rjmp	.+126    	; 0x130 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	3d c0       	rjmp	.+122    	; 0x130 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	3b c0       	rjmp	.+118    	; 0x130 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	39 c0       	rjmp	.+114    	; 0x130 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	37 c0       	rjmp	.+110    	; 0x130 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	35 c0       	rjmp	.+106    	; 0x130 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	33 c0       	rjmp	.+102    	; 0x130 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	31 c0       	rjmp	.+98     	; 0x130 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	2f c0       	rjmp	.+94     	; 0x130 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	2d c0       	rjmp	.+90     	; 0x130 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	2b c0       	rjmp	.+86     	; 0x130 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	29 c0       	rjmp	.+82     	; 0x130 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	27 c0       	rjmp	.+78     	; 0x130 <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	2f 04       	cpc	r2, r15
+  e6:	33 04       	cpc	r3, r3
+  e8:	37 04       	cpc	r3, r7
+  ea:	3b 04       	cpc	r3, r11
+  ec:	3f 04       	cpc	r3, r15
+  ee:	65 04       	cpc	r6, r5
+  f0:	bd 04       	cpc	r11, r13
+
+000000f2 <__ctors_end>:
+  f2:	11 24       	eor	r1, r1
+  f4:	1f be       	out	0x3f, r1	; 63
+  f6:	cf ef       	ldi	r28, 0xFF	; 255
+  f8:	d1 e2       	ldi	r29, 0x21	; 33
+  fa:	de bf       	out	0x3e, r29	; 62
+  fc:	cd bf       	out	0x3d, r28	; 61
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0c bf       	out	0x3c, r16	; 60
+
+00000102 <__do_copy_data>:
+ 102:	12 e0       	ldi	r17, 0x02	; 2
+ 104:	a0 e0       	ldi	r26, 0x00	; 0
+ 106:	b2 e0       	ldi	r27, 0x02	; 2
+ 108:	e0 e9       	ldi	r30, 0x90	; 144
+ 10a:	fa e0       	ldi	r31, 0x0A	; 10
+ 10c:	00 e0       	ldi	r16, 0x00	; 0
+ 10e:	0b bf       	out	0x3b, r16	; 59
+ 110:	02 c0       	rjmp	.+4      	; 0x116 <__do_copy_data+0x14>
+ 112:	07 90       	elpm	r0, Z+
+ 114:	0d 92       	st	X+, r0
+ 116:	a8 3a       	cpi	r26, 0xA8	; 168
+ 118:	b1 07       	cpc	r27, r17
+ 11a:	d9 f7       	brne	.-10     	; 0x112 <__do_copy_data+0x10>
+
+0000011c <__do_clear_bss>:
+ 11c:	25 e0       	ldi	r18, 0x05	; 5
+ 11e:	a8 ea       	ldi	r26, 0xA8	; 168
+ 120:	b2 e0       	ldi	r27, 0x02	; 2
+ 122:	01 c0       	rjmp	.+2      	; 0x126 <.do_clear_bss_start>
+
+00000124 <.do_clear_bss_loop>:
+ 124:	1d 92       	st	X+, r1
+
+00000126 <.do_clear_bss_start>:
+ 126:	a1 30       	cpi	r26, 0x01	; 1
+ 128:	b2 07       	cpc	r27, r18
+ 12a:	e1 f7       	brne	.-8      	; 0x124 <.do_clear_bss_loop>
+ 12c:	e8 d0       	rcall	.+464    	; 0x2fe <main>
+ 12e:	ae c4       	rjmp	.+2396   	; 0xa8c <_exit>
+
+00000130 <__bad_interrupt>:
+ 130:	67 cf       	rjmp	.-306    	; 0x0 <__vectors>
+
+00000132 <_Z8adc_initv>:
+ uint8_t adcResult;
+ 	
+ void adc_init(){
+	
+	// set ADC power reduction bit PRADC to 0 to turn on the ADC
+	PRR0 &= ~(1 << PRADC); 
+ 132:	e4 e6       	ldi	r30, 0x64	; 100
+ 134:	f0 e0       	ldi	r31, 0x00	; 0
+ 136:	80 81       	ld	r24, Z
+ 138:	8e 7f       	andi	r24, 0xFE	; 254
+ 13a:	80 83       	st	Z, r24
+
+	// setup the ADC for left adjusted result presentation,
+	// this means for 8 bit reading keeping MSBs we just read the high byte.
+	// use VRef as comparison voltage
+	ADMUX |= (1<<ADLAR) | (1<<REFS0);
+ 13c:	ec e7       	ldi	r30, 0x7C	; 124
+ 13e:	f0 e0       	ldi	r31, 0x00	; 0
+ 140:	80 81       	ld	r24, Z
+ 142:	80 66       	ori	r24, 0x60	; 96
+ 144:	80 83       	st	Z, r24
+
+
+	// enable ADC with 128 clock divisor for 125kHz at 16MHz Mclk
+	ADCSRA |= (1<<ADEN) | (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0); 
+ 146:	ea e7       	ldi	r30, 0x7A	; 122
+ 148:	f0 e0       	ldi	r31, 0x00	; 0
+ 14a:	80 81       	ld	r24, Z
+ 14c:	87 68       	ori	r24, 0x87	; 135
+ 14e:	80 83       	st	Z, r24
+
+	
+	adcResult = 0;
+ 150:	10 92 a8 02 	sts	0x02A8, r1	; 0x8002a8 <__data_end>
+ 154:	08 95       	ret
+
+00000156 <_Z7adc_offv>:
+}
+
+
+void adc_off(void){
+	// turn off the ADC and ADC interrupt
+	ADCSRA &= ~(1<<ADEN);
+ 156:	ea e7       	ldi	r30, 0x7A	; 122
+ 158:	f0 e0       	ldi	r31, 0x00	; 0
+ 15a:	80 81       	ld	r24, Z
+ 15c:	8f 77       	andi	r24, 0x7F	; 127
+ 15e:	80 83       	st	Z, r24
+	ADCSRA &= ~(1<<ADIE);
+ 160:	80 81       	ld	r24, Z
+ 162:	87 7f       	andi	r24, 0xF7	; 247
+ 164:	80 83       	st	Z, r24
+ 166:	08 95       	ret
+
+00000168 <_Z16adc_request_readv>:
+// turned off.
+void adc_request_read(){
+	
+	// reset the array indexes if the last error value has been read
+	
+	if(state.leftPID.sensorReadingArrayIndex == 16){
+ 168:	80 91 c8 02 	lds	r24, 0x02C8	; 0x8002c8 <state+0x1e>
+ 16c:	80 31       	cpi	r24, 0x10	; 16
+ 16e:	21 f4       	brne	.+8      	; 0x178 <_Z16adc_request_readv+0x10>
+		state.leftPID.sensorReadingArrayIndex = 0;
+ 170:	ea ea       	ldi	r30, 0xAA	; 170
+ 172:	f2 e0       	ldi	r31, 0x02	; 2
+ 174:	16 8e       	std	Z+30, r1	; 0x1e
+		state.rightPID.sensorReadingArrayIndex = 0;
+ 176:	15 ae       	std	Z+61, r1	; 0x3d
+	}
+	
+	// set the ADC control flag to Left side
+	nextADCChannel = ADC_LEFT_CONVERSION_NEXT;
+ 178:	10 92 a9 02 	sts	0x02A9, r1	; 0x8002a9 <nextADCChannel>
+
+	ADMUX = ((ADMUX & 0xF0) | (LEFT_ADC_PORT & 0x0F)); // setup ADC MUX for input on Left ADC channel
+ 17c:	ec e7       	ldi	r30, 0x7C	; 124
+ 17e:	f0 e0       	ldi	r31, 0x00	; 0
+ 180:	80 81       	ld	r24, Z
+ 182:	80 7f       	andi	r24, 0xF0	; 240
+ 184:	87 60       	ori	r24, 0x07	; 7
+ 186:	80 83       	st	Z, r24
+
+	// enable the ADC interrupt and start conversion
+	ADCSRA |= (1 << ADIE) | (1 << ADSC);
+ 188:	ea e7       	ldi	r30, 0x7A	; 122
+ 18a:	f0 e0       	ldi	r31, 0x00	; 0
+ 18c:	80 81       	ld	r24, Z
+ 18e:	88 64       	ori	r24, 0x48	; 72
+ 190:	80 83       	st	Z, r24
+ 192:	08 95       	ret
+
+00000194 <__vector_29>:
+}
+
+  // This interrupt working as a binary First In First Out queue
+  // The ADC sensor values are read with an 8 bit resolution
+  // so the 2 least significant bits are discarded
+  ISR(ADC_vect){
+ 194:	1f 92       	push	r1
+ 196:	0f 92       	push	r0
+ 198:	0f b6       	in	r0, 0x3f	; 63
+ 19a:	0f 92       	push	r0
+ 19c:	11 24       	eor	r1, r1
+ 19e:	0b b6       	in	r0, 0x3b	; 59
+ 1a0:	0f 92       	push	r0
+ 1a2:	2f 93       	push	r18
+ 1a4:	3f 93       	push	r19
+ 1a6:	8f 93       	push	r24
+ 1a8:	9f 93       	push	r25
+ 1aa:	af 93       	push	r26
+ 1ac:	bf 93       	push	r27
+ 1ae:	ef 93       	push	r30
+ 1b0:	ff 93       	push	r31
+	adcResult10Bit += ADCL; // merge the high and low bytes
+	*/
+
+
+	// read the high ADC byte
+	adcResult = ADCH;
+ 1b2:	80 91 79 00 	lds	r24, 0x0079	; 0x800079 <__TEXT_REGION_LENGTH__+0x7c0079>
+ 1b6:	80 93 a8 02 	sts	0x02A8, r24	; 0x8002a8 <__data_end>
+
+    // if the left channel is next conversion in line 
+	if(nextADCChannel == ADC_LEFT_CONVERSION_NEXT){
+ 1ba:	90 91 a9 02 	lds	r25, 0x02A9	; 0x8002a9 <nextADCChannel>
+ 1be:	91 11       	cpse	r25, r1
+ 1c0:	23 c0       	rjmp	.+70     	; 0x208 <__vector_29+0x74>
+		
+		// set the read result to the current index
+		state.leftPID.sensorReadingArray[state.leftPID.sensorReadingArrayIndex] = adcResult;
+ 1c2:	ea ea       	ldi	r30, 0xAA	; 170
+ 1c4:	f2 e0       	ldi	r31, 0x02	; 2
+ 1c6:	96 8d       	ldd	r25, Z+30	; 0x1e
+ 1c8:	a9 2f       	mov	r26, r25
+ 1ca:	b0 e0       	ldi	r27, 0x00	; 0
+ 1cc:	a6 55       	subi	r26, 0x56	; 86
+ 1ce:	bd 4f       	sbci	r27, 0xFD	; 253
+ 1d0:	1e 96       	adiw	r26, 0x0e	; 14
+ 1d2:	8c 93       	st	X, r24
+		state.leftPID.summedErrorSamples += adcResult;
+ 1d4:	27 8d       	ldd	r18, Z+31	; 0x1f
+ 1d6:	30 a1       	ldd	r19, Z+32	; 0x20
+ 1d8:	28 0f       	add	r18, r24
+ 1da:	31 1d       	adc	r19, r1
+ 1dc:	30 a3       	std	Z+32, r19	; 0x20
+ 1de:	27 8f       	std	Z+31, r18	; 0x1f
+		// increment the error array index
+		state.leftPID.sensorReadingArrayIndex++;
+ 1e0:	9f 5f       	subi	r25, 0xFF	; 255
+ 1e2:	96 8f       	std	Z+30, r25	; 0x1e
+
+		ADMUX &= ~((1<<MUX3)|(1<<MUX2)|(1<<MUX1)|(1<<MUX0)); // clear the left multiplexer bits
+ 1e4:	ec e7       	ldi	r30, 0x7C	; 124
+ 1e6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1e8:	80 81       	ld	r24, Z
+ 1ea:	80 7f       	andi	r24, 0xF0	; 240
+ 1ec:	80 83       	st	Z, r24
+		ADMUX = ((ADMUX & 0xF0) | (RIGHT_ADC_PORT & 0x0F)); // setup ADC MUX for read on right channel
+ 1ee:	80 81       	ld	r24, Z
+ 1f0:	80 7f       	andi	r24, 0xF0	; 240
+ 1f2:	86 60       	ori	r24, 0x06	; 6
+ 1f4:	80 83       	st	Z, r24
+		ADCSRA |= (1 << ADSC); // ADC start conversion on right side sensor
+ 1f6:	ea e7       	ldi	r30, 0x7A	; 122
+ 1f8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1fa:	80 81       	ld	r24, Z
+ 1fc:	80 64       	ori	r24, 0x40	; 64
+ 1fe:	80 83       	st	Z, r24
+		
+		// flip the ADC control flag
+		nextADCChannel = ADC_RIGHT_CONVERSION_NEXT;
+ 200:	81 e0       	ldi	r24, 0x01	; 1
+ 202:	80 93 a9 02 	sts	0x02A9, r24	; 0x8002a9 <nextADCChannel>
+ 206:	1d c0       	rjmp	.+58     	; 0x242 <__vector_29+0xae>
+	}
+	else{
+		
+		// save the error value to the array
+		state.rightPID.sensorReadingArray[state.rightPID.sensorReadingArrayIndex] = adcResult;
+ 208:	ea ea       	ldi	r30, 0xAA	; 170
+ 20a:	f2 e0       	ldi	r31, 0x02	; 2
+ 20c:	95 ad       	ldd	r25, Z+61	; 0x3d
+ 20e:	a9 2f       	mov	r26, r25
+ 210:	b0 e0       	ldi	r27, 0x00	; 0
+ 212:	a6 55       	subi	r26, 0x56	; 86
+ 214:	bd 4f       	sbci	r27, 0xFD	; 253
+ 216:	9d 96       	adiw	r26, 0x2d	; 45
+ 218:	8c 93       	st	X, r24
+		state.rightPID.summedErrorSamples += adcResult;
+ 21a:	26 ad       	ldd	r18, Z+62	; 0x3e
+ 21c:	37 ad       	ldd	r19, Z+63	; 0x3f
+ 21e:	28 0f       	add	r18, r24
+ 220:	31 1d       	adc	r19, r1
+ 222:	37 af       	std	Z+63, r19	; 0x3f
+ 224:	26 af       	std	Z+62, r18	; 0x3e
+		// increment the error array index
+		state.rightPID.sensorReadingArrayIndex++;
+ 226:	9f 5f       	subi	r25, 0xFF	; 255
+ 228:	95 af       	std	Z+61, r25	; 0x3d
+
+		ADMUX &= ~((1<<MUX3)|(1<<MUX2)|(1<<MUX1)|(1<<MUX0)); // clear the multiplexer bits
+ 22a:	ec e7       	ldi	r30, 0x7C	; 124
+ 22c:	f0 e0       	ldi	r31, 0x00	; 0
+ 22e:	80 81       	ld	r24, Z
+ 230:	80 7f       	andi	r24, 0xF0	; 240
+ 232:	80 83       	st	Z, r24
+
+		// flip the ADC control flag
+		nextADCChannel = ADC_LEFT_CONVERSION_NEXT;
+ 234:	10 92 a9 02 	sts	0x02A9, r1	; 0x8002a9 <nextADCChannel>
+
+		// disable the ADC interrupt
+		// the 2 error values for this error sample period have been read. 
+		ADCSRA &= ~(1 << ADIE);
+ 238:	ea e7       	ldi	r30, 0x7A	; 122
+ 23a:	f0 e0       	ldi	r31, 0x00	; 0
+ 23c:	80 81       	ld	r24, Z
+ 23e:	87 7f       	andi	r24, 0xF7	; 247
+ 240:	80 83       	st	Z, r24
+	}
+
+ 242:	ff 91       	pop	r31
+ 244:	ef 91       	pop	r30
+ 246:	bf 91       	pop	r27
+ 248:	af 91       	pop	r26
+ 24a:	9f 91       	pop	r25
+ 24c:	8f 91       	pop	r24
+ 24e:	3f 91       	pop	r19
+ 250:	2f 91       	pop	r18
+ 252:	0f 90       	pop	r0
+ 254:	0b be       	out	0x3b, r0	; 59
+ 256:	0f 90       	pop	r0
+ 258:	0f be       	out	0x3f, r0	; 63
+ 25a:	0f 90       	pop	r0
+ 25c:	1f 90       	pop	r1
+ 25e:	18 95       	reti
+
+00000260 <_Z10board_initv>:
+void board_init(){
+
+
+
+	// clock setup
+	CLKPR |= 0x80;  // set clock scaler to 1
+ 260:	e1 e6       	ldi	r30, 0x61	; 97
+ 262:	f0 e0       	ldi	r31, 0x00	; 0
+ 264:	80 81       	ld	r24, Z
+ 266:	80 68       	ori	r24, 0x80	; 128
+ 268:	80 83       	st	Z, r24
+				"out __SREG__,__tmp_reg__"   "\n\t"
+				: [TEMPREG] "=d" (temp_reg)
+				: [WDTREG]  "n"  (_SFR_MEM_ADDR(_WD_CONTROL_REG)),
+				[WDCE_WDE]  "n"  ((uint8_t)(_BV(_WD_CHANGE_BIT) | _BV(WDE)))
+				: "r0"
+		);
+ 26a:	0f b6       	in	r0, 0x3f	; 63
+ 26c:	f8 94       	cli
+ 26e:	a8 95       	wdr
+ 270:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__TEXT_REGION_LENGTH__+0x7c0060>
+ 274:	88 61       	ori	r24, 0x18	; 24
+ 276:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__TEXT_REGION_LENGTH__+0x7c0060>
+ 27a:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__TEXT_REGION_LENGTH__+0x7c0060>
+ 27e:	0f be       	out	0x3f, r0	; 63
+	// atmel pins       MSB{PD2,  PD3,  PD4,  PD5,  PD6,  PD7,   PB0,   PB1}LSB
+	// DAC port 2
+	// arduino pins:    MSB{D10,  D11,  A0,  A1,  A5,  A4,  A3,  A2}LSB
+	// atmel pins       MSB{PB2,  PB3,  PC0, PC1, PC5, PC4, PC3, PC2}LSB
+		
+	DDRB |= 0x0F; // port B output pins 0-1 output for DAC1 and output pins 2 and 3 DAC2 (pins 8 to 11 on Arduino)
+ 280:	84 b1       	in	r24, 0x04	; 4
+ 282:	8f 60       	ori	r24, 0x0F	; 15
+ 284:	84 b9       	out	0x04, r24	; 4
+	DDRD = 0xFC; // port D output pins 2-7 for DAC1 (pins 14 to 17 on Arduino)
+ 286:	8c ef       	ldi	r24, 0xFC	; 252
+ 288:	8a b9       	out	0x0a, r24	; 10
+	DDRC = 0x3F; // port C output pins 0-5 For DAC2
+ 28a:	8f e3       	ldi	r24, 0x3F	; 63
+ 28c:	87 b9       	out	0x07, r24	; 7
+
+
+	// setup PORT C for input on analog channels ADC6 and ADC7 (arduino pins A6 and A7)
+	DDRC &= ~(BIT6 | BIT7);
+ 28e:	87 b1       	in	r24, 0x07	; 7
+ 290:	8f 73       	andi	r24, 0x3F	; 63
+ 292:	87 b9       	out	0x07, r24	; 7
+ 294:	08 95       	ret
+
+00000296 <_Z9data_initv>:
+ uint8_t dataArray[MEMORY_ARRAY_LENGTH];
+ extern State state;
+
+// setup data struct
+void data_init(){
+	state.cartMode = standby;
+ 296:	ea ea       	ldi	r30, 0xAA	; 170
+ 298:	f2 e0       	ldi	r31, 0x02	; 2
+ 29a:	81 e0       	ldi	r24, 0x01	; 1
+ 29c:	80 83       	st	Z, r24
+	state.previousCartMode = standby;
+ 29e:	81 83       	std	Z+1, r24	; 0x01
+	init_PID();
+ 2a0:	1b d1       	rcall	.+566    	; 0x4d8 <_Z8init_PIDv>
+	state.calcPID = false;
+ 2a2:	10 92 ec 02 	sts	0x02EC, r1	; 0x8002ec <state+0x42>
+	state.currentMemAddress = 0x0000;
+ 2a6:	10 92 eb 02 	sts	0x02EB, r1	; 0x8002eb <state+0x41>
+ 2aa:	10 92 ea 02 	sts	0x02EA, r1	; 0x8002ea <state+0x40>
+	state.messageRecieved = false;
+ 2ae:	10 92 ed 02 	sts	0x02ED, r1	; 0x8002ed <state+0x43>
+	state.messageSend = false;
+ 2b2:	10 92 ee 02 	sts	0x02EE, r1	; 0x8002ee <state+0x44>
+	state.cartModeChanged = false;
+ 2b6:	10 92 ef 02 	sts	0x02EF, r1	; 0x8002ef <state+0x45>
+ 2ba:	08 95       	ret
+
+000002bc <_Z22handle_cartMode_changev>:
+
+void handle_cartMode_change(){
+
+	// this switch statement to turn off
+	// any state related hardware
+	switch(state.previousCartMode){
+ 2bc:	80 91 ab 02 	lds	r24, 0x02AB	; 0x8002ab <state+0x1>
+ 2c0:	83 30       	cpi	r24, 0x03	; 3
+ 2c2:	49 f0       	breq	.+18     	; 0x2d6 <_Z22handle_cartMode_changev+0x1a>
+ 2c4:	84 30       	cpi	r24, 0x04	; 4
+ 2c6:	71 f0       	breq	.+28     	; 0x2e4 <_Z22handle_cartMode_changev+0x28>
+ 2c8:	82 30       	cpi	r24, 0x02	; 2
+ 2ca:	81 f4       	brne	.+32     	; 0x2ec <_Z22handle_cartMode_changev+0x30>
+		
+		case standby:
+		break;
+		
+		case manual:
+			setDACLeft_Value(STOP);
+ 2cc:	8f e7       	ldi	r24, 0x7F	; 127
+ 2ce:	40 d0       	rcall	.+128    	; 0x350 <_Z16setDACLeft_Valueh>
+			setDACRight_Value(STOP);
+ 2d0:	8f e7       	ldi	r24, 0x7F	; 127
+ 2d2:	85 d0       	rcall	.+266    	; 0x3de <_Z17setDACRight_Valueh>
+		break;
+		
+		case autoLineFollow:
+			stop_PID_timer();
+ 2d4:	0b c0       	rjmp	.+22     	; 0x2ec <_Z22handle_cartMode_changev+0x30>
+			adc_off();
+ 2d6:	a3 d1       	rcall	.+838    	; 0x61e <_Z14stop_PID_timerv>
+			setDACLeft_Value(STOP);
+ 2d8:	3e df       	rcall	.-388    	; 0x156 <_Z7adc_offv>
+ 2da:	8f e7       	ldi	r24, 0x7F	; 127
+			setDACRight_Value(STOP);
+ 2dc:	39 d0       	rcall	.+114    	; 0x350 <_Z16setDACLeft_Valueh>
+ 2de:	8f e7       	ldi	r24, 0x7F	; 127
+			// stop_PID_timer();
+		break;
+ 2e0:	7e d0       	rcall	.+252    	; 0x3de <_Z17setDACRight_Valueh>
+		
+		case tuning:
+			setDACLeft_Value(STOP);
+ 2e2:	04 c0       	rjmp	.+8      	; 0x2ec <_Z22handle_cartMode_changev+0x30>
+ 2e4:	8f e7       	ldi	r24, 0x7F	; 127
+			setDACRight_Value(STOP);
+ 2e6:	34 d0       	rcall	.+104    	; 0x350 <_Z16setDACLeft_Valueh>
+ 2e8:	8f e7       	ldi	r24, 0x7F	; 127
+	}
+
+	
+	// this switch statement to turn on new
+	// state related hardware etc
+	switch(state.cartMode){
+ 2ea:	79 d0       	rcall	.+242    	; 0x3de <_Z17setDACRight_Valueh>
+ 2ec:	80 91 aa 02 	lds	r24, 0x02AA	; 0x8002aa <state>
+ 2f0:	83 30       	cpi	r24, 0x03	; 3
+		
+		case manual:
+		break;
+		
+		case autoLineFollow:
+			adc_init();
+ 2f2:	11 f4       	brne	.+4      	; 0x2f8 <_Z22handle_cartMode_changev+0x3c>
+ 2f4:	1e df       	rcall	.-452    	; 0x132 <_Z8adc_initv>
+			start_PID_timer();
+ 2f6:	82 d1       	rcall	.+772    	; 0x5fc <_Z15start_PID_timerv>
+ 2f8:	10 92 ef 02 	sts	0x02EF, r1	; 0x8002ef <state+0x45>
+
+		case saveData:
+		break;
+	}
+
+	state.cartModeChanged = false;
+ 2fc:	08 95       	ret
+
+000002fe <main>:
+ 2fe:	b0 df       	rcall	.-160    	; 0x260 <_Z10board_initv>
+
+int main(void)
+{
+	// initialize board
+	board_init();
+	usart_init(9600);
+ 300:	60 e8       	ldi	r22, 0x80	; 128
+ 302:	75 e2       	ldi	r23, 0x25	; 37
+ 304:	80 e0       	ldi	r24, 0x00	; 0
+ 306:	90 e0       	ldi	r25, 0x00	; 0
+	data_init();
+ 308:	cb d1       	rcall	.+918    	; 0x6a0 <_Z10usart_initm>
+	timer1_PID_init();
+ 30a:	c5 df       	rcall	.-118    	; 0x296 <_Z9data_initv>
+ 30c:	6b d1       	rcall	.+726    	; 0x5e4 <_Z15timer1_PID_initv>
+	adc_init();
+ 30e:	11 df       	rcall	.-478    	; 0x132 <_Z8adc_initv>
+ 310:	2f ef       	ldi	r18, 0xFF	; 255
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 312:	89 e6       	ldi	r24, 0x69	; 105
+ 314:	98 e1       	ldi	r25, 0x18	; 24
+ 316:	21 50       	subi	r18, 0x01	; 1
+ 318:	80 40       	sbci	r24, 0x00	; 0
+ 31a:	90 40       	sbci	r25, 0x00	; 0
+ 31c:	e1 f7       	brne	.-8      	; 0x316 <main+0x18>
+ 31e:	00 c0       	rjmp	.+0      	; 0x320 <main+0x22>
+ 320:	00 00       	nop
+	_delay_ms(500);
+
+	// enable interrupts
+	sei();
+ 322:	78 94       	sei
+    {
+		
+		// handle state flags
+		// these should be organized in order of 
+		// importance to program flow
+		if(state.messageRecieved){
+ 324:	80 91 ed 02 	lds	r24, 0x02ED	; 0x8002ed <state+0x43>
+			usart_message_recieved();
+ 328:	81 11       	cpse	r24, r1
+ 32a:	78 d2       	rcall	.+1264   	; 0x81c <_Z22usart_message_recievedv>
+		}
+
+		if(state.cartModeChanged){
+ 32c:	80 91 ef 02 	lds	r24, 0x02EF	; 0x8002ef <state+0x45>
+			handle_cartMode_change();
+ 330:	81 11       	cpse	r24, r1
+ 332:	c4 df       	rcall	.-120    	; 0x2bc <_Z22handle_cartMode_changev>
+		}
+		if(state.calcPID){
+ 334:	80 91 ec 02 	lds	r24, 0x02EC	; 0x8002ec <state+0x42>
+ 338:	88 23       	and	r24, r24
+ 33a:	a1 f3       	breq	.-24     	; 0x324 <main+0x26>
+			calc_PID();
+ 33c:	dd d0       	rcall	.+442    	; 0x4f8 <_Z8calc_PIDv>
+ 33e:	10 92 ec 02 	sts	0x02EC, r1	; 0x8002ec <state+0x42>
+			state.calcPID = false;
+ 342:	f0 cf       	rjmp	.-32     	; 0x324 <main+0x26>
+
+00000344 <_Z20send_PID_data_reportv>:
+	}
+
+ }
+
+ void send_PID_data_report(){
+	usart_send_bytes(pidMessageArray, 4, AUTO_MODE_DATA_REPORT);
+ 344:	4a ef       	ldi	r20, 0xFA	; 250
+ 346:	64 e0       	ldi	r22, 0x04	; 4
+ 348:	82 ef       	ldi	r24, 0xF2	; 242
+ 34a:	92 e0       	ldi	r25, 0x02	; 2
+ 34c:	15 c2       	rjmp	.+1066   	; 0x778 <_Z16usart_send_bytesPhhh>
+ 34e:	08 95       	ret
+
+00000350 <_Z16setDACLeft_Valueh>:
+// DAC port 1
+// arduino pins:    MSB{pin2,  pin3,  pin4,  pin5,  pin6,  pin7,   pin8,   pin9}LSB
+// atmel pins       MSB{PD2,  PD3,  PD4,  PD5,  PD6,  PD7,   PB0,   PB1}LSB
+void setDACLeft_Value(uint8_t inDACValue){
+	
+	PORTD &= ~0xFC; // clear pins 7 to 2 of port D
+ 350:	9b b1       	in	r25, 0x0b	; 11
+ 352:	93 70       	andi	r25, 0x03	; 3
+ 354:	9b b9       	out	0x0b, r25	; 11
+	PORTD |= ((inDACValue & BIT7) ? (1<<PORTD2) : (0<<PORTD2));
+ 356:	9b b1       	in	r25, 0x0b	; 11
+ 358:	88 23       	and	r24, r24
+ 35a:	14 f4       	brge	.+4      	; 0x360 <_Z16setDACLeft_Valueh+0x10>
+ 35c:	24 e0       	ldi	r18, 0x04	; 4
+ 35e:	01 c0       	rjmp	.+2      	; 0x362 <_Z16setDACLeft_Valueh+0x12>
+ 360:	20 e0       	ldi	r18, 0x00	; 0
+ 362:	92 2b       	or	r25, r18
+ 364:	9b b9       	out	0x0b, r25	; 11
+	PORTD |= ((inDACValue & BIT6) ? (1<<PORTD3) : (0<<PORTD3));
+ 366:	9b b1       	in	r25, 0x0b	; 11
+ 368:	86 ff       	sbrs	r24, 6
+ 36a:	02 c0       	rjmp	.+4      	; 0x370 <_Z16setDACLeft_Valueh+0x20>
+ 36c:	28 e0       	ldi	r18, 0x08	; 8
+ 36e:	01 c0       	rjmp	.+2      	; 0x372 <_Z16setDACLeft_Valueh+0x22>
+ 370:	20 e0       	ldi	r18, 0x00	; 0
+ 372:	92 2b       	or	r25, r18
+ 374:	9b b9       	out	0x0b, r25	; 11
+	PORTD |= ((inDACValue & BIT5) ? (1<<PORTD4) : (0<<PORTD4));
+ 376:	9b b1       	in	r25, 0x0b	; 11
+ 378:	85 ff       	sbrs	r24, 5
+ 37a:	02 c0       	rjmp	.+4      	; 0x380 <_Z16setDACLeft_Valueh+0x30>
+ 37c:	20 e1       	ldi	r18, 0x10	; 16
+ 37e:	01 c0       	rjmp	.+2      	; 0x382 <_Z16setDACLeft_Valueh+0x32>
+ 380:	20 e0       	ldi	r18, 0x00	; 0
+ 382:	92 2b       	or	r25, r18
+ 384:	9b b9       	out	0x0b, r25	; 11
+	PORTD |= ((inDACValue & BIT4) ? (1<<PORTD5) : (0<<PORTD5));
+ 386:	9b b1       	in	r25, 0x0b	; 11
+ 388:	84 ff       	sbrs	r24, 4
+ 38a:	02 c0       	rjmp	.+4      	; 0x390 <_Z16setDACLeft_Valueh+0x40>
+ 38c:	20 e2       	ldi	r18, 0x20	; 32
+ 38e:	01 c0       	rjmp	.+2      	; 0x392 <_Z16setDACLeft_Valueh+0x42>
+ 390:	20 e0       	ldi	r18, 0x00	; 0
+ 392:	92 2b       	or	r25, r18
+ 394:	9b b9       	out	0x0b, r25	; 11
+	PORTD |= ((inDACValue & BIT3) ? (1<<PORTD6) : (0<<PORTD6));
+ 396:	9b b1       	in	r25, 0x0b	; 11
+ 398:	83 ff       	sbrs	r24, 3
+ 39a:	02 c0       	rjmp	.+4      	; 0x3a0 <_Z16setDACLeft_Valueh+0x50>
+ 39c:	20 e4       	ldi	r18, 0x40	; 64
+ 39e:	01 c0       	rjmp	.+2      	; 0x3a2 <_Z16setDACLeft_Valueh+0x52>
+ 3a0:	20 e0       	ldi	r18, 0x00	; 0
+ 3a2:	92 2b       	or	r25, r18
+ 3a4:	9b b9       	out	0x0b, r25	; 11
+	PORTD |= ((inDACValue & BIT2) ? (1<<PORTD7) : (0<<PORTD7));
+ 3a6:	9b b1       	in	r25, 0x0b	; 11
+ 3a8:	82 ff       	sbrs	r24, 2
+ 3aa:	02 c0       	rjmp	.+4      	; 0x3b0 <_Z16setDACLeft_Valueh+0x60>
+ 3ac:	20 e8       	ldi	r18, 0x80	; 128
+ 3ae:	01 c0       	rjmp	.+2      	; 0x3b2 <_Z16setDACLeft_Valueh+0x62>
+ 3b0:	20 e0       	ldi	r18, 0x00	; 0
+ 3b2:	92 2b       	or	r25, r18
+ 3b4:	9b b9       	out	0x0b, r25	; 11
+
+	PORTB &= ~0x03; // reset bits 0 and 1 of port B
+ 3b6:	95 b1       	in	r25, 0x05	; 5
+ 3b8:	9c 7f       	andi	r25, 0xFC	; 252
+ 3ba:	95 b9       	out	0x05, r25	; 5
+	PORTB |= ((inDACValue & BIT1) ? (1<<PORTB0) : (0<<PORTB0));
+ 3bc:	95 b1       	in	r25, 0x05	; 5
+ 3be:	81 ff       	sbrs	r24, 1
+ 3c0:	02 c0       	rjmp	.+4      	; 0x3c6 <_Z16setDACLeft_Valueh+0x76>
+ 3c2:	21 e0       	ldi	r18, 0x01	; 1
+ 3c4:	01 c0       	rjmp	.+2      	; 0x3c8 <_Z16setDACLeft_Valueh+0x78>
+ 3c6:	20 e0       	ldi	r18, 0x00	; 0
+ 3c8:	92 2b       	or	r25, r18
+ 3ca:	95 b9       	out	0x05, r25	; 5
+	PORTB |= ((inDACValue & BIT0) ? (1<<PORTB1) : (0<<PORTB1));
+ 3cc:	95 b1       	in	r25, 0x05	; 5
+ 3ce:	80 ff       	sbrs	r24, 0
+ 3d0:	02 c0       	rjmp	.+4      	; 0x3d6 <_Z16setDACLeft_Valueh+0x86>
+ 3d2:	82 e0       	ldi	r24, 0x02	; 2
+ 3d4:	01 c0       	rjmp	.+2      	; 0x3d8 <_Z16setDACLeft_Valueh+0x88>
+ 3d6:	80 e0       	ldi	r24, 0x00	; 0
+ 3d8:	89 2b       	or	r24, r25
+ 3da:	85 b9       	out	0x05, r24	; 5
+ 3dc:	08 95       	ret
+
+000003de <_Z17setDACRight_Valueh>:
+// DAC port 2
+// arduino pins:    MSB{D10,  D11,  A0,  A1,  A5,  A4,  A3,  A2}LSB
+// atmel pins       MSB{PB2,  PB3,  PC0, PC1, PC5, PC4, PC3, PC2}LSB
+void setDACRight_Value(uint8_t inDACValue){
+
+	PORTB &= ~0x0C; // reset bit 2 and 3 of port B
+ 3de:	95 b1       	in	r25, 0x05	; 5
+ 3e0:	93 7f       	andi	r25, 0xF3	; 243
+ 3e2:	95 b9       	out	0x05, r25	; 5
+	PORTB |= ((inDACValue & BIT7) ? (1<<PORTB2) : (0<<PORTB2));
+ 3e4:	95 b1       	in	r25, 0x05	; 5
+ 3e6:	88 23       	and	r24, r24
+ 3e8:	14 f4       	brge	.+4      	; 0x3ee <_Z17setDACRight_Valueh+0x10>
+ 3ea:	24 e0       	ldi	r18, 0x04	; 4
+ 3ec:	01 c0       	rjmp	.+2      	; 0x3f0 <_Z17setDACRight_Valueh+0x12>
+ 3ee:	20 e0       	ldi	r18, 0x00	; 0
+ 3f0:	92 2b       	or	r25, r18
+ 3f2:	95 b9       	out	0x05, r25	; 5
+	PORTB |= ((inDACValue & BIT6) ? (1<<PORTB3) : (0<<PORTB3));
+ 3f4:	95 b1       	in	r25, 0x05	; 5
+ 3f6:	86 ff       	sbrs	r24, 6
+ 3f8:	02 c0       	rjmp	.+4      	; 0x3fe <_Z17setDACRight_Valueh+0x20>
+ 3fa:	28 e0       	ldi	r18, 0x08	; 8
+ 3fc:	01 c0       	rjmp	.+2      	; 0x400 <__LOCK_REGION_LENGTH__>
+ 3fe:	20 e0       	ldi	r18, 0x00	; 0
+ 400:	92 2b       	or	r25, r18
+ 402:	95 b9       	out	0x05, r25	; 5
+	 
+	PORTC &= ~0x3F; // reset port C bits 0-5
+ 404:	98 b1       	in	r25, 0x08	; 8
+ 406:	90 7c       	andi	r25, 0xC0	; 192
+ 408:	98 b9       	out	0x08, r25	; 8
+	PORTC |= ((inDACValue & BIT5) ? (1<<PORTC0) : (0<<PORTC0));
+ 40a:	98 b1       	in	r25, 0x08	; 8
+ 40c:	85 ff       	sbrs	r24, 5
+ 40e:	02 c0       	rjmp	.+4      	; 0x414 <__LOCK_REGION_LENGTH__+0x14>
+ 410:	21 e0       	ldi	r18, 0x01	; 1
+ 412:	01 c0       	rjmp	.+2      	; 0x416 <__LOCK_REGION_LENGTH__+0x16>
+ 414:	20 e0       	ldi	r18, 0x00	; 0
+ 416:	92 2b       	or	r25, r18
+ 418:	98 b9       	out	0x08, r25	; 8
+	PORTC |= ((inDACValue & BIT4) ? (1<<PORTC1) : (0<<PORTC1));
+ 41a:	98 b1       	in	r25, 0x08	; 8
+ 41c:	84 ff       	sbrs	r24, 4
+ 41e:	02 c0       	rjmp	.+4      	; 0x424 <__LOCK_REGION_LENGTH__+0x24>
+ 420:	22 e0       	ldi	r18, 0x02	; 2
+ 422:	01 c0       	rjmp	.+2      	; 0x426 <__LOCK_REGION_LENGTH__+0x26>
+ 424:	20 e0       	ldi	r18, 0x00	; 0
+ 426:	92 2b       	or	r25, r18
+ 428:	98 b9       	out	0x08, r25	; 8
+	PORTC |= ((inDACValue & BIT3) ? (1<<PORTC5) : (0<<PORTC5));
+ 42a:	98 b1       	in	r25, 0x08	; 8
+ 42c:	83 ff       	sbrs	r24, 3
+ 42e:	02 c0       	rjmp	.+4      	; 0x434 <__LOCK_REGION_LENGTH__+0x34>
+ 430:	20 e2       	ldi	r18, 0x20	; 32
+ 432:	01 c0       	rjmp	.+2      	; 0x436 <__LOCK_REGION_LENGTH__+0x36>
+ 434:	20 e0       	ldi	r18, 0x00	; 0
+ 436:	92 2b       	or	r25, r18
+ 438:	98 b9       	out	0x08, r25	; 8
+	PORTC |= ((inDACValue & BIT2) ? (1<<PORTC4) : (0<<PORTC4));
+ 43a:	98 b1       	in	r25, 0x08	; 8
+ 43c:	82 ff       	sbrs	r24, 2
+ 43e:	02 c0       	rjmp	.+4      	; 0x444 <__LOCK_REGION_LENGTH__+0x44>
+ 440:	20 e1       	ldi	r18, 0x10	; 16
+ 442:	01 c0       	rjmp	.+2      	; 0x446 <__LOCK_REGION_LENGTH__+0x46>
+ 444:	20 e0       	ldi	r18, 0x00	; 0
+ 446:	92 2b       	or	r25, r18
+ 448:	98 b9       	out	0x08, r25	; 8
+	PORTC |= ((inDACValue & BIT1) ? (1<<PORTC3) : (0<<PORTC3));
+ 44a:	98 b1       	in	r25, 0x08	; 8
+ 44c:	81 ff       	sbrs	r24, 1
+ 44e:	02 c0       	rjmp	.+4      	; 0x454 <__LOCK_REGION_LENGTH__+0x54>
+ 450:	28 e0       	ldi	r18, 0x08	; 8
+ 452:	01 c0       	rjmp	.+2      	; 0x456 <__LOCK_REGION_LENGTH__+0x56>
+ 454:	20 e0       	ldi	r18, 0x00	; 0
+ 456:	92 2b       	or	r25, r18
+ 458:	98 b9       	out	0x08, r25	; 8
+	PORTC |= ((inDACValue & BIT0) ? (1<<PORTC2) : (0<<PORTC2));
+ 45a:	98 b1       	in	r25, 0x08	; 8
+ 45c:	80 ff       	sbrs	r24, 0
+ 45e:	02 c0       	rjmp	.+4      	; 0x464 <__LOCK_REGION_LENGTH__+0x64>
+ 460:	84 e0       	ldi	r24, 0x04	; 4
+ 462:	01 c0       	rjmp	.+2      	; 0x466 <__LOCK_REGION_LENGTH__+0x66>
+ 464:	80 e0       	ldi	r24, 0x00	; 0
+ 466:	89 2b       	or	r24, r25
+ 468:	88 b9       	out	0x08, r24	; 8
+ 46a:	08 95       	ret
+
+0000046c <_Z10defaultPIDb>:
+	defaultPID(LEFT_SIDE);
+	defaultPID(RIGHT_SIDE);
+}
+
+
+void defaultPID(bool side){
+ 46c:	cf 93       	push	r28
+ 46e:	df 93       	push	r29
+	if(side == LEFT_SIDE){
+ 470:	81 11       	cpse	r24, r1
+ 472:	17 c0       	rjmp	.+46     	; 0x4a2 <_Z10defaultPIDb+0x36>
+		state.leftPID.previousError = 0;
+ 474:	ca ea       	ldi	r28, 0xAA	; 170
+ 476:	d2 e0       	ldi	r29, 0x02	; 2
+ 478:	1f 82       	std	Y+7, r1	; 0x07
+ 47a:	1e 82       	std	Y+6, r1	; 0x06
+		state.leftPID.newError = 0;
+ 47c:	1d 82       	std	Y+5, r1	; 0x05
+ 47e:	1c 82       	std	Y+4, r1	; 0x04
+		state.leftPID.previousDACValue = STOP;
+ 480:	8f e7       	ldi	r24, 0x7F	; 127
+ 482:	8b 83       	std	Y+3, r24	; 0x03
+		state.leftPID.newDACValue = STOP; // set to stop
+ 484:	8a 83       	std	Y+2, r24	; 0x02
+		setDACLeft_Value(state.leftPID.newDACValue);
+ 486:	64 df       	rcall	.-312    	; 0x350 <_Z16setDACLeft_Valueh>
+		state.leftPID.kP = 1;
+ 488:	81 e0       	ldi	r24, 0x01	; 1
+ 48a:	88 87       	std	Y+8, r24	; 0x08
+		state.leftPID.kI = 1;
+ 48c:	89 87       	std	Y+9, r24	; 0x09
+		state.leftPID.kD = 1;
+ 48e:	8a 87       	std	Y+10, r24	; 0x0a
+		state.leftPID.Dt = PID_UPDATE_DT;
+ 490:	80 e4       	ldi	r24, 0x40	; 64
+ 492:	8b 87       	std	Y+11, r24	; 0x0b
+		state.leftPID.kIDt = state.leftPID.kI * state.leftPID.Dt; // update this value to avoid multiplication in PID calculation
+ 494:	80 e4       	ldi	r24, 0x40	; 64
+ 496:	90 e0       	ldi	r25, 0x00	; 0
+ 498:	9d 87       	std	Y+13, r25	; 0x0d
+ 49a:	8c 87       	std	Y+12, r24	; 0x0c
+		//state.leftPID.sensorReadingArrayIndex = 0;
+		state.leftPID.summedErrorSamples = 0;
+ 49c:	18 a2       	std	Y+32, r1	; 0x20
+ 49e:	1f 8e       	std	Y+31, r1	; 0x1f
+ 4a0:	18 c0       	rjmp	.+48     	; 0x4d2 <_Z10defaultPIDb+0x66>
+		}
+		*/
+
+	}
+	else{
+		state.rightPID.previousError = 0;
+ 4a2:	ca ea       	ldi	r28, 0xAA	; 170
+ 4a4:	d2 e0       	ldi	r29, 0x02	; 2
+ 4a6:	1e a2       	std	Y+38, r1	; 0x26
+ 4a8:	1d a2       	std	Y+37, r1	; 0x25
+		state.rightPID.newError = 0;
+ 4aa:	1c a2       	std	Y+36, r1	; 0x24
+ 4ac:	1b a2       	std	Y+35, r1	; 0x23
+		state.rightPID.previousDACValue = STOP;
+ 4ae:	8f e7       	ldi	r24, 0x7F	; 127
+ 4b0:	8a a3       	std	Y+34, r24	; 0x22
+		state.rightPID.newDACValue = STOP; // set to stop
+		setDACRight_Value(state.rightPID.newDACValue);
+ 4b2:	89 a3       	std	Y+33, r24	; 0x21
+ 4b4:	94 df       	rcall	.-216    	; 0x3de <_Z17setDACRight_Valueh>
+		state.rightPID.previousError = 0;
+ 4b6:	1e a2       	std	Y+38, r1	; 0x26
+ 4b8:	1d a2       	std	Y+37, r1	; 0x25
+		state.rightPID.kP = 1;
+ 4ba:	81 e0       	ldi	r24, 0x01	; 1
+ 4bc:	8f a3       	std	Y+39, r24	; 0x27
+		state.rightPID.kI = 1;
+ 4be:	88 a7       	std	Y+40, r24	; 0x28
+		state.rightPID.kD = 1;
+ 4c0:	89 a7       	std	Y+41, r24	; 0x29
+		state.rightPID.Dt = PID_UPDATE_DT;
+ 4c2:	80 e4       	ldi	r24, 0x40	; 64
+ 4c4:	8a a7       	std	Y+42, r24	; 0x2a
+		state.rightPID.kIDt = state.rightPID.kI * state.rightPID.Dt; // update this value to avoid multiplication in PID calculation
+ 4c6:	80 e4       	ldi	r24, 0x40	; 64
+ 4c8:	90 e0       	ldi	r25, 0x00	; 0
+ 4ca:	9c a7       	std	Y+44, r25	; 0x2c
+ 4cc:	8b a7       	std	Y+43, r24	; 0x2b
+		state.rightPID.summedErrorSamples = 0;
+ 4ce:	1f ae       	std	Y+63, r1	; 0x3f
+ 4d0:	1e ae       	std	Y+62, r1	; 0x3e
+		for(uint8_t ii = 0; ii < ERROR_SAMPLES_PER_PID_UPDATE; ii++){
+			state.rightPID.sensorReadingArray[ii] = 0;
+		}
+		*/
+	}
+}
+ 4d2:	df 91       	pop	r29
+ 4d4:	cf 91       	pop	r28
+ 4d6:	08 95       	ret
+
+000004d8 <_Z8init_PIDv>:
+
+uint8_t pidMessageArray[PID_MESSAGE_ARRAY_LENGTH];
+
+
+void init_PID(){
+	defaultPID(LEFT_SIDE);
+ 4d8:	80 e0       	ldi	r24, 0x00	; 0
+ 4da:	c8 df       	rcall	.-112    	; 0x46c <_Z10defaultPIDb>
+	defaultPID(RIGHT_SIDE);
+ 4dc:	81 e0       	ldi	r24, 0x01	; 1
+ 4de:	c6 cf       	rjmp	.-116    	; 0x46c <_Z10defaultPIDb>
+ 4e0:	08 95       	ret
+
+000004e2 <_Z9setOutputv>:
+
+ void send_PID_data_report(){
+	usart_send_bytes(pidMessageArray, 4, AUTO_MODE_DATA_REPORT);
+ }
+
+ void setOutput(){
+ 4e2:	cf 93       	push	r28
+ 4e4:	df 93       	push	r29
+	// set the DAC ports with new PID values 
+	setDACLeft_Value(state.leftPID.newDACValue);
+ 4e6:	ca ea       	ldi	r28, 0xAA	; 170
+ 4e8:	d2 e0       	ldi	r29, 0x02	; 2
+ 4ea:	8a 81       	ldd	r24, Y+2	; 0x02
+ 4ec:	31 df       	rcall	.-414    	; 0x350 <_Z16setDACLeft_Valueh>
+	setDACRight_Value(state.rightPID.newDACValue);
+ 4ee:	89 a1       	ldd	r24, Y+33	; 0x21
+ 4f0:	76 df       	rcall	.-276    	; 0x3de <_Z17setDACRight_Valueh>
+ }
+ 4f2:	df 91       	pop	r29
+ 4f4:	cf 91       	pop	r28
+ 4f6:	08 95       	ret
+
+000004f8 <_Z8calc_PIDv>:
+		}
+		*/
+	}
+}
+
+ void calc_PID(){
+ 4f8:	cf 93       	push	r28
+ 4fa:	df 93       	push	r29
+
+
+
+	// copy old error and duty cycle values into previous variables
+	state.leftPID.previousError = state.leftPID.newError;
+ 4fc:	ea ea       	ldi	r30, 0xAA	; 170
+ 4fe:	f2 e0       	ldi	r31, 0x02	; 2
+ 500:	24 81       	ldd	r18, Z+4	; 0x04
+ 502:	35 81       	ldd	r19, Z+5	; 0x05
+ 504:	37 83       	std	Z+7, r19	; 0x07
+ 506:	26 83       	std	Z+6, r18	; 0x06
+	state.rightPID.previousError = state.rightPID.newError;
+ 508:	83 a1       	ldd	r24, Z+35	; 0x23
+ 50a:	94 a1       	ldd	r25, Z+36	; 0x24
+ 50c:	96 a3       	std	Z+38, r25	; 0x26
+ 50e:	85 a3       	std	Z+37, r24	; 0x25
+	state.leftPID.previousDACValue = state.leftPID.newDACValue;
+ 510:	b2 81       	ldd	r27, Z+2	; 0x02
+ 512:	b3 83       	std	Z+3, r27	; 0x03
+	state.rightPID.previousDACValue = state.rightPID.newDACValue;
+ 514:	a1 a1       	ldd	r26, Z+33	; 0x21
+ 516:	a2 a3       	std	Z+34, r26	; 0x22
+	*/
+	//pidMessageArray[0] = state.leftPID.sensorReadingArray[0];
+	//pidMessageArray[1] = state.rightPID.sensorReadingArray[0];
+	
+	// divide the summed error samples by the 16 samples this PID update
+	uint8_t averagedLeftErrorSample = state.leftPID.summedErrorSamples >> 0x04;
+ 518:	67 8d       	ldd	r22, Z+31	; 0x1f
+ 51a:	70 a1       	ldd	r23, Z+32	; 0x20
+ 51c:	72 95       	swap	r23
+ 51e:	62 95       	swap	r22
+ 520:	6f 70       	andi	r22, 0x0F	; 15
+ 522:	67 27       	eor	r22, r23
+ 524:	7f 70       	andi	r23, 0x0F	; 15
+ 526:	67 27       	eor	r22, r23
+	uint8_t averagedRightErrorSample = state.rightPID.summedErrorSamples >> 0x04;
+ 528:	46 ad       	ldd	r20, Z+62	; 0x3e
+ 52a:	57 ad       	ldd	r21, Z+63	; 0x3f
+ 52c:	52 95       	swap	r21
+ 52e:	42 95       	swap	r20
+ 530:	4f 70       	andi	r20, 0x0F	; 15
+ 532:	45 27       	eor	r20, r21
+ 534:	5f 70       	andi	r21, 0x0F	; 15
+ 536:	45 27       	eor	r20, r21
+	*/
+
+	//uint8_t averagedRightErrorSample = state.rightPID.summedErrorSamples >> 0x04;
+
+	// add the averaged sensor values to the data report
+	pidMessageArray[0] = averagedLeftErrorSample;
+ 538:	c2 ef       	ldi	r28, 0xF2	; 242
+ 53a:	d2 e0       	ldi	r29, 0x02	; 2
+ 53c:	68 83       	st	Y, r22
+	pidMessageArray[1] = averagedRightErrorSample;
+ 53e:	49 83       	std	Y+1, r20	; 0x01
+
+	// zero the summed errors
+	state.leftPID.summedErrorSamples = 0;
+ 540:	10 a2       	std	Z+32, r1	; 0x20
+ 542:	17 8e       	std	Z+31, r1	; 0x1f
+	state.rightPID.summedErrorSamples = 0;
+ 544:	17 ae       	std	Z+63, r1	; 0x3f
+ 546:	16 ae       	std	Z+62, r1	; 0x3e
+	// calculate new DAC values
+
+	// left side
+	// kp term:
+	int16_t l_kp_term = (int16_t)((state.leftPID.kP * (state.leftPID.newError - state.leftPID.previousError))); //need to divide by 8 for this
+	int16_t l_ki_term = (int16_t)(state.leftPID.kIDt * state.leftPID.previousError); // needs to divide by 8
+ 548:	64 85       	ldd	r22, Z+12	; 0x0c
+ 54a:	75 85       	ldd	r23, Z+13	; 0x0d
+ 54c:	26 9f       	mul	r18, r22
+ 54e:	a0 01       	movw	r20, r0
+ 550:	27 9f       	mul	r18, r23
+ 552:	50 0d       	add	r21, r0
+ 554:	36 9f       	mul	r19, r22
+ 556:	50 0d       	add	r21, r0
+ 558:	11 24       	eor	r1, r1
+	int16_t l_summed_terms = (l_kp_term + l_ki_term);
+	int8_t l_scaled = l_summed_terms/64;
+ 55a:	9a 01       	movw	r18, r20
+ 55c:	55 23       	and	r21, r21
+ 55e:	14 f4       	brge	.+4      	; 0x564 <_Z8calc_PIDv+0x6c>
+ 560:	21 5c       	subi	r18, 0xC1	; 193
+ 562:	3f 4f       	sbci	r19, 0xFF	; 255
+ 564:	02 2e       	mov	r0, r18
+ 566:	23 2f       	mov	r18, r19
+ 568:	00 0c       	add	r0, r0
+ 56a:	22 1f       	adc	r18, r18
+ 56c:	33 0b       	sbc	r19, r19
+ 56e:	00 0c       	add	r0, r0
+ 570:	22 1f       	adc	r18, r18
+ 572:	33 1f       	adc	r19, r19
+	state.leftPID.newDACValue = (uint8_t)(state.leftPID.previousDACValue + l_scaled);
+ 574:	2b 0f       	add	r18, r27
+ 576:	ea ea       	ldi	r30, 0xAA	; 170
+ 578:	f2 e0       	ldi	r31, 0x02	; 2
+ 57a:	22 83       	std	Z+2, r18	; 0x02
+	else if(averagedLeftErrorSample == 0 && state.rightPID.previousDACValue < 254){
+		state.rightPID.newDACValue += 1;
+	}
+	*/
+
+	pidMessageArray[2] = state.leftPID.newDACValue;
+ 57c:	20 93 f4 02 	sts	0x02F4, r18	; 0x8002f4 <pidMessageArray+0x2>
+
+	// right side
+	// kp term:
+	
+	int16_t r_kp_term = (int16_t)((state.rightPID.kP * (state.rightPID.newError - state.rightPID.previousError)));
+	int16_t r_ki_term = (int16_t)(state.rightPID.kIDt * state.rightPID.previousError);
+ 580:	43 a5       	ldd	r20, Z+43	; 0x2b
+ 582:	54 a5       	ldd	r21, Z+44	; 0x2c
+ 584:	84 9f       	mul	r24, r20
+ 586:	90 01       	movw	r18, r0
+ 588:	85 9f       	mul	r24, r21
+ 58a:	30 0d       	add	r19, r0
+ 58c:	94 9f       	mul	r25, r20
+ 58e:	30 0d       	add	r19, r0
+ 590:	11 24       	eor	r1, r1
+	int16_t r_summed_terms = (r_kp_term + r_ki_term);
+	int8_t r_scaled = (uint8_t)(r_summed_terms/64);
+ 592:	c9 01       	movw	r24, r18
+ 594:	99 23       	and	r25, r25
+ 596:	0c f4       	brge	.+2      	; 0x59a <_Z8calc_PIDv+0xa2>
+ 598:	cf 96       	adiw	r24, 0x3f	; 63
+ 59a:	08 2e       	mov	r0, r24
+ 59c:	89 2f       	mov	r24, r25
+ 59e:	00 0c       	add	r0, r0
+ 5a0:	88 1f       	adc	r24, r24
+ 5a2:	99 0b       	sbc	r25, r25
+ 5a4:	00 0c       	add	r0, r0
+ 5a6:	88 1f       	adc	r24, r24
+ 5a8:	99 1f       	adc	r25, r25
+	state.rightPID.newDACValue = state.rightPID.previousDACValue + r_scaled;
+ 5aa:	8a 0f       	add	r24, r26
+ 5ac:	80 93 cb 02 	sts	0x02CB, r24	; 0x8002cb <state+0x21>
+	
+	pidMessageArray[3] = state.rightPID.newDACValue;
+ 5b0:	80 93 f5 02 	sts	0x02F5, r24	; 0x8002f5 <pidMessageArray+0x3>
+	
+	//state.rightPID.newDACValue = 127;
+	setOutput();
+ 5b4:	96 df       	rcall	.-212    	; 0x4e2 <_Z9setOutputv>
+
+	messageTimerByte++;
+ 5b6:	80 91 fc 02 	lds	r24, 0x02FC	; 0x8002fc <messageTimerByte>
+ 5ba:	90 91 fd 02 	lds	r25, 0x02FD	; 0x8002fd <messageTimerByte+0x1>
+ 5be:	01 96       	adiw	r24, 0x01	; 1
+ 5c0:	90 93 fd 02 	sts	0x02FD, r25	; 0x8002fd <messageTimerByte+0x1>
+ 5c4:	80 93 fc 02 	sts	0x02FC, r24	; 0x8002fc <messageTimerByte>
+
+	// use this if statement to change serial report update rate
+	if(messageTimerByte == 10){
+ 5c8:	80 91 fc 02 	lds	r24, 0x02FC	; 0x8002fc <messageTimerByte>
+ 5cc:	90 91 fd 02 	lds	r25, 0x02FD	; 0x8002fd <messageTimerByte+0x1>
+ 5d0:	0a 97       	sbiw	r24, 0x0a	; 10
+		send_PID_data_report();
+ 5d2:	29 f4       	brne	.+10     	; 0x5de <_Z8calc_PIDv+0xe6>
+ 5d4:	b7 de       	rcall	.-658    	; 0x344 <_Z20send_PID_data_reportv>
+		messageTimerByte = 0;
+ 5d6:	10 92 fd 02 	sts	0x02FD, r1	; 0x8002fd <messageTimerByte+0x1>
+ 5da:	10 92 fc 02 	sts	0x02FC, r1	; 0x8002fc <messageTimerByte>
+	}
+
+ }
+ 5de:	df 91       	pop	r29
+ 5e0:	cf 91       	pop	r28
+ 5e2:	08 95       	ret
+
+000005e4 <_Z15timer1_PID_initv>:
+* CTC mode
+*******************************************/
+ 
+void timer1_PID_init(){
+	// CTC mode, TOP is OCR1A 
+	TCCR1B |= (1 << WGM12);
+ 5e4:	e1 e8       	ldi	r30, 0x81	; 129
+ 5e6:	f0 e0       	ldi	r31, 0x00	; 0
+ 5e8:	80 81       	ld	r24, Z
+ 5ea:	88 60       	ori	r24, 0x08	; 8
+ 5ec:	80 83       	st	Z, r24
+
+	// set the compare register to 64000 - 1
+	// this is a 16 bit register but compiler handles writing to high and low bytes
+	OCR1A = 0xF9FF; // 63999
+ 5ee:	8f ef       	ldi	r24, 0xFF	; 255
+ 5f0:	99 ef       	ldi	r25, 0xF9	; 249
+ 5f2:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7c0089>
+ 5f6:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7c0088>
+ 5fa:	08 95       	ret
+
+000005fc <_Z15start_PID_timerv>:
+
+
+ void start_PID_timer(){
+
+	// start conversion on first error values
+	adc_request_read();
+ 5fc:	b5 dd       	rcall	.-1174   	; 0x168 <_Z16adc_request_readv>
+	
+	calcPIDcounter = 0;
+ 5fe:	10 92 fe 02 	sts	0x02FE, r1	; 0x8002fe <calcPIDcounter>
+
+	TCCR1B &= ~((1<<CS12) | (1<<CS11) | (1<<CS10)); // reset clock select bits
+ 602:	e1 e8       	ldi	r30, 0x81	; 129
+ 604:	f0 e0       	ldi	r31, 0x00	; 0
+ 606:	80 81       	ld	r24, Z
+ 608:	88 7f       	andi	r24, 0xF8	; 248
+ 60a:	80 83       	st	Z, r24
+	TIMSK1 |= (1<<OCIE1A); // enable interrupt on compare match 
+ 60c:	af e6       	ldi	r26, 0x6F	; 111
+ 60e:	b0 e0       	ldi	r27, 0x00	; 0
+ 610:	8c 91       	ld	r24, X
+ 612:	82 60       	ori	r24, 0x02	; 2
+ 614:	8c 93       	st	X, r24
+	TCCR1B |= (1<<CS10); // start timer with system clock no divider
+ 616:	80 81       	ld	r24, Z
+ 618:	81 60       	ori	r24, 0x01	; 1
+ 61a:	80 83       	st	Z, r24
+ 61c:	08 95       	ret
+
+0000061e <_Z14stop_PID_timerv>:
+ }
+
+ 
+ void stop_PID_timer(){
+	TCCR1B &= ~((1<<CS12) | (1<<CS11) | (1<<CS10)); // set timer clock select to no source, stop timer
+ 61e:	e1 e8       	ldi	r30, 0x81	; 129
+ 620:	f0 e0       	ldi	r31, 0x00	; 0
+ 622:	80 81       	ld	r24, Z
+ 624:	88 7f       	andi	r24, 0xF8	; 248
+ 626:	80 83       	st	Z, r24
+	TIMSK1 &= ~(1<<OCIE1A); // disable interrupt
+ 628:	ef e6       	ldi	r30, 0x6F	; 111
+ 62a:	f0 e0       	ldi	r31, 0x00	; 0
+ 62c:	80 81       	ld	r24, Z
+ 62e:	8d 7f       	andi	r24, 0xFD	; 253
+ 630:	80 83       	st	Z, r24
+ 632:	08 95       	ret
+
+00000634 <__vector_17>:
+ }
+
+
+ // this interrupt updates error samples until we have 16 samples, then we calculate the PID values 
+ ISR (TIMER1_COMPA_vect){
+ 634:	1f 92       	push	r1
+ 636:	0f 92       	push	r0
+ 638:	0f b6       	in	r0, 0x3f	; 63
+ 63a:	0f 92       	push	r0
+ 63c:	11 24       	eor	r1, r1
+ 63e:	0b b6       	in	r0, 0x3b	; 59
+ 640:	0f 92       	push	r0
+ 642:	2f 93       	push	r18
+ 644:	3f 93       	push	r19
+ 646:	4f 93       	push	r20
+ 648:	5f 93       	push	r21
+ 64a:	6f 93       	push	r22
+ 64c:	7f 93       	push	r23
+ 64e:	8f 93       	push	r24
+ 650:	9f 93       	push	r25
+ 652:	af 93       	push	r26
+ 654:	bf 93       	push	r27
+ 656:	ef 93       	push	r30
+ 658:	ff 93       	push	r31
+
+	if(calcPIDcounter == 15){
+ 65a:	80 91 fe 02 	lds	r24, 0x02FE	; 0x8002fe <calcPIDcounter>
+ 65e:	8f 30       	cpi	r24, 0x0F	; 15
+ 660:	31 f4       	brne	.+12     	; 0x66e <__vector_17+0x3a>
+		
+		// set the calculate PID flag in the state struct
+		state.calcPID = true;
+ 662:	81 e0       	ldi	r24, 0x01	; 1
+ 664:	80 93 ec 02 	sts	0x02EC, r24	; 0x8002ec <state+0x42>
+		// reset PID counter
+		calcPIDcounter = 0;
+ 668:	10 92 fe 02 	sts	0x02FE, r1	; 0x8002fe <calcPIDcounter>
+ 66c:	06 c0       	rjmp	.+12     	; 0x67a <__vector_17+0x46>
+
+	}
+
+	else{
+		adc_request_read();
+ 66e:	7c dd       	rcall	.-1288   	; 0x168 <_Z16adc_request_readv>
+		calcPIDcounter++;	
+ 670:	80 91 fe 02 	lds	r24, 0x02FE	; 0x8002fe <calcPIDcounter>
+ 674:	8f 5f       	subi	r24, 0xFF	; 255
+ 676:	80 93 fe 02 	sts	0x02FE, r24	; 0x8002fe <calcPIDcounter>
+	}
+ }
+ 67a:	ff 91       	pop	r31
+ 67c:	ef 91       	pop	r30
+ 67e:	bf 91       	pop	r27
+ 680:	af 91       	pop	r26
+ 682:	9f 91       	pop	r25
+ 684:	8f 91       	pop	r24
+ 686:	7f 91       	pop	r23
+ 688:	6f 91       	pop	r22
+ 68a:	5f 91       	pop	r21
+ 68c:	4f 91       	pop	r20
+ 68e:	3f 91       	pop	r19
+ 690:	2f 91       	pop	r18
+ 692:	0f 90       	pop	r0
+ 694:	0b be       	out	0x3b, r0	; 59
+ 696:	0f 90       	pop	r0
+ 698:	0f be       	out	0x3f, r0	; 63
+ 69a:	0f 90       	pop	r0
+ 69c:	1f 90       	pop	r1
+ 69e:	18 95       	reti
+
+000006a0 <_Z10usart_initm>:
+uint8_t txPosition;
+
+extern State state;
+
+ void usart_init(uint32_t baud){
+	uint16_t temp = (uint8_t)((F_CPU/(16*baud))-1);
+ 6a0:	dc 01       	movw	r26, r24
+ 6a2:	cb 01       	movw	r24, r22
+ 6a4:	88 0f       	add	r24, r24
+ 6a6:	99 1f       	adc	r25, r25
+ 6a8:	aa 1f       	adc	r26, r26
+ 6aa:	bb 1f       	adc	r27, r27
+ 6ac:	88 0f       	add	r24, r24
+ 6ae:	99 1f       	adc	r25, r25
+ 6b0:	aa 1f       	adc	r26, r26
+ 6b2:	bb 1f       	adc	r27, r27
+ 6b4:	9c 01       	movw	r18, r24
+ 6b6:	ad 01       	movw	r20, r26
+ 6b8:	22 0f       	add	r18, r18
+ 6ba:	33 1f       	adc	r19, r19
+ 6bc:	44 1f       	adc	r20, r20
+ 6be:	55 1f       	adc	r21, r21
+ 6c0:	22 0f       	add	r18, r18
+ 6c2:	33 1f       	adc	r19, r19
+ 6c4:	44 1f       	adc	r20, r20
+ 6c6:	55 1f       	adc	r21, r21
+ 6c8:	60 e0       	ldi	r22, 0x00	; 0
+ 6ca:	74 e2       	ldi	r23, 0x24	; 36
+ 6cc:	84 ef       	ldi	r24, 0xF4	; 244
+ 6ce:	90 e0       	ldi	r25, 0x00	; 0
+ 6d0:	b3 d1       	rcall	.+870    	; 0xa38 <__udivmodsi4>
+ 6d2:	21 50       	subi	r18, 0x01	; 1
+
+	cli(); // turn off global interrupts
+ 6d4:	f8 94       	cli
+	UBRR0H = (uint8_t)temp >> 8; // set baud rate register
+ 6d6:	10 92 c5 00 	sts	0x00C5, r1	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7c00c5>
+	UBRR0L = (uint8_t)temp;
+ 6da:	20 93 c4 00 	sts	0x00C4, r18	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7c00c4>
+	UCSR0B |= (1<< TXEN0) | (1<< RXEN0) | (1<< RXCIE0); // enable transmit and receive and set RX interrupt
+ 6de:	e1 ec       	ldi	r30, 0xC1	; 193
+ 6e0:	f0 e0       	ldi	r31, 0x00	; 0
+ 6e2:	80 81       	ld	r24, Z
+ 6e4:	88 69       	ori	r24, 0x98	; 152
+ 6e6:	80 83       	st	Z, r24
+	UCSR0C |= (1 << UCSZ01) | (1 << UCSZ00); // setup for 8 bit transmission length
+ 6e8:	e2 ec       	ldi	r30, 0xC2	; 194
+ 6ea:	f0 e0       	ldi	r31, 0x00	; 0
+ 6ec:	80 81       	ld	r24, Z
+ 6ee:	86 60       	ori	r24, 0x06	; 6
+ 6f0:	80 83       	st	Z, r24
+	sei(); // turn on global interrupts
+ 6f2:	78 94       	sei
+
+	// set variables
+	rxLength = 0;
+ 6f4:	10 92 02 03 	sts	0x0302, r1	; 0x800302 <rxLength>
+	txLength = 0;
+ 6f8:	10 92 01 03 	sts	0x0301, r1	; 0x800301 <txLength>
+	rxPosition = 0;
+ 6fc:	10 92 00 03 	sts	0x0300, r1	; 0x800300 <rxPosition>
+	txPosition = 0;
+ 700:	10 92 ff 02 	sts	0x02FF, r1	; 0x8002ff <txPosition>
+ 704:	08 95       	ret
+
+00000706 <_Z17usart_send_stringPc>:
+ }
+
+ void usart_send_string(char* inString){
+ 706:	fc 01       	movw	r30, r24
+	state.messageSend = true;
+ 708:	81 e0       	ldi	r24, 0x01	; 1
+ 70a:	80 93 ee 02 	sts	0x02EE, r24	; 0x8002ee <state+0x44>
+	txLength = strlen(inString) + 2;
+ 70e:	df 01       	movw	r26, r30
+ 710:	0d 90       	ld	r0, X+
+ 712:	00 20       	and	r0, r0
+ 714:	e9 f7       	brne	.-6      	; 0x710 <_Z17usart_send_stringPc+0xa>
+ 716:	11 97       	sbiw	r26, 0x01	; 1
+ 718:	ae 1b       	sub	r26, r30
+ 71a:	bf 0b       	sbc	r27, r31
+ 71c:	42 e0       	ldi	r20, 0x02	; 2
+ 71e:	4a 0f       	add	r20, r26
+ 720:	40 93 01 03 	sts	0x0301, r20	; 0x800301 <txLength>
+	txPosition = 0;
+ 724:	10 92 ff 02 	sts	0x02FF, r1	; 0x8002ff <txPosition>
+	transmitBuffer[0] = STRING_START; // send string start byte
+ 728:	a3 e0       	ldi	r26, 0x03	; 3
+ 72a:	b3 e0       	ldi	r27, 0x03	; 3
+ 72c:	8e ef       	ldi	r24, 0xFE	; 254
+ 72e:	8c 93       	st	X, r24
+	transmitBuffer[1] =  txLength; // send length of string
+ 730:	11 96       	adiw	r26, 0x01	; 1
+ 732:	4c 93       	st	X, r20
+	 
+	// load transmit buffer
+	for(size_t ii = 2; ii < txLength; ii++){
+ 734:	22 e0       	ldi	r18, 0x02	; 2
+ 736:	30 e0       	ldi	r19, 0x00	; 0
+ 738:	84 2f       	mov	r24, r20
+ 73a:	90 e0       	ldi	r25, 0x00	; 0
+ 73c:	28 17       	cp	r18, r24
+ 73e:	39 07       	cpc	r19, r25
+ 740:	48 f4       	brcc	.+18     	; 0x754 <_Z17usart_send_stringPc+0x4e>
+		transmitBuffer[ii] = (uint8_t)*inString++;
+ 742:	80 81       	ld	r24, Z
+ 744:	d9 01       	movw	r26, r18
+ 746:	ad 5f       	subi	r26, 0xFD	; 253
+ 748:	bc 4f       	sbci	r27, 0xFC	; 252
+ 74a:	8c 93       	st	X, r24
+	txPosition = 0;
+	transmitBuffer[0] = STRING_START; // send string start byte
+	transmitBuffer[1] =  txLength; // send length of string
+	 
+	// load transmit buffer
+	for(size_t ii = 2; ii < txLength; ii++){
+ 74c:	2f 5f       	subi	r18, 0xFF	; 255
+ 74e:	3f 4f       	sbci	r19, 0xFF	; 255
+		transmitBuffer[ii] = (uint8_t)*inString++;
+ 750:	31 96       	adiw	r30, 0x01	; 1
+	txPosition = 0;
+	transmitBuffer[0] = STRING_START; // send string start byte
+	transmitBuffer[1] =  txLength; // send length of string
+	 
+	// load transmit buffer
+	for(size_t ii = 2; ii < txLength; ii++){
+ 752:	f2 cf       	rjmp	.-28     	; 0x738 <_Z17usart_send_stringPc+0x32>
+		transmitBuffer[ii] = (uint8_t)*inString++;
+	}
+	UCSR0B |= (1 << TXEN0);
+ 754:	e1 ec       	ldi	r30, 0xC1	; 193
+ 756:	f0 e0       	ldi	r31, 0x00	; 0
+ 758:	80 81       	ld	r24, Z
+ 75a:	88 60       	ori	r24, 0x08	; 8
+ 75c:	80 83       	st	Z, r24
+	UCSR0B |= (1 << TXCIE0); // setup transmit interrupt
+ 75e:	80 81       	ld	r24, Z
+ 760:	80 64       	ori	r24, 0x40	; 64
+ 762:	80 83       	st	Z, r24
+	UDR0 = transmitBuffer[0]; // send string start byte
+ 764:	80 91 03 03 	lds	r24, 0x0303	; 0x800303 <transmitBuffer>
+ 768:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7c00c6>
+	txPosition++;
+ 76c:	80 91 ff 02 	lds	r24, 0x02FF	; 0x8002ff <txPosition>
+ 770:	8f 5f       	subi	r24, 0xFF	; 255
+ 772:	80 93 ff 02 	sts	0x02FF, r24	; 0x8002ff <txPosition>
+ 776:	08 95       	ret
+
+00000778 <_Z16usart_send_bytesPhhh>:
+}
+
+ void usart_send_bytes(uint8_t* inDataArray, uint8_t inLength, uint8_t controlByte){
+ 778:	dc 01       	movw	r26, r24
+	state.messageSend = true;
+ 77a:	81 e0       	ldi	r24, 0x01	; 1
+ 77c:	80 93 ee 02 	sts	0x02EE, r24	; 0x8002ee <state+0x44>
+	txLength = inLength + 3;
+ 780:	83 e0       	ldi	r24, 0x03	; 3
+ 782:	86 0f       	add	r24, r22
+ 784:	80 93 01 03 	sts	0x0301, r24	; 0x800301 <txLength>
+	txPosition = 0;
+ 788:	10 92 ff 02 	sts	0x02FF, r1	; 0x8002ff <txPosition>
+	transmitBuffer[0] = BYTE_START;
+ 78c:	e3 e0       	ldi	r30, 0x03	; 3
+ 78e:	f3 e0       	ldi	r31, 0x03	; 3
+ 790:	9f ef       	ldi	r25, 0xFF	; 255
+ 792:	90 83       	st	Z, r25
+	transmitBuffer[1] = txLength;
+ 794:	81 83       	std	Z+1, r24	; 0x01
+	transmitBuffer[2] = controlByte;
+ 796:	42 83       	std	Z+2, r20	; 0x02
+
+	for(int ii = 0; ii < inLength; ii++){
+ 798:	20 e0       	ldi	r18, 0x00	; 0
+ 79a:	30 e0       	ldi	r19, 0x00	; 0
+ 79c:	46 2f       	mov	r20, r22
+ 79e:	50 e0       	ldi	r21, 0x00	; 0
+ 7a0:	24 17       	cp	r18, r20
+ 7a2:	35 07       	cpc	r19, r21
+ 7a4:	5c f4       	brge	.+22     	; 0x7bc <_Z16usart_send_bytesPhhh+0x44>
+		transmitBuffer[ii + 3] = inDataArray[ii];		
+ 7a6:	fd 01       	movw	r30, r26
+ 7a8:	e2 0f       	add	r30, r18
+ 7aa:	f3 1f       	adc	r31, r19
+ 7ac:	90 81       	ld	r25, Z
+ 7ae:	f9 01       	movw	r30, r18
+ 7b0:	ea 5f       	subi	r30, 0xFA	; 250
+ 7b2:	fc 4f       	sbci	r31, 0xFC	; 252
+ 7b4:	90 83       	st	Z, r25
+	txPosition = 0;
+	transmitBuffer[0] = BYTE_START;
+	transmitBuffer[1] = txLength;
+	transmitBuffer[2] = controlByte;
+
+	for(int ii = 0; ii < inLength; ii++){
+ 7b6:	2f 5f       	subi	r18, 0xFF	; 255
+ 7b8:	3f 4f       	sbci	r19, 0xFF	; 255
+ 7ba:	f0 cf       	rjmp	.-32     	; 0x79c <_Z16usart_send_bytesPhhh+0x24>
+		transmitBuffer[ii + 3] = inDataArray[ii];		
+	}
+		
+	UCSR0B |= (1 << TXEN0);
+ 7bc:	e1 ec       	ldi	r30, 0xC1	; 193
+ 7be:	f0 e0       	ldi	r31, 0x00	; 0
+ 7c0:	80 81       	ld	r24, Z
+ 7c2:	88 60       	ori	r24, 0x08	; 8
+ 7c4:	80 83       	st	Z, r24
+	UCSR0B |= (1 << TXCIE0); // setup transmit interrupt
+ 7c6:	80 81       	ld	r24, Z
+ 7c8:	80 64       	ori	r24, 0x40	; 64
+ 7ca:	80 83       	st	Z, r24
+	UDR0 = transmitBuffer[0]; // send first byte
+ 7cc:	80 91 03 03 	lds	r24, 0x0303	; 0x800303 <transmitBuffer>
+ 7d0:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7c00c6>
+	txPosition++;
+ 7d4:	80 91 ff 02 	lds	r24, 0x02FF	; 0x8002ff <txPosition>
+ 7d8:	8f 5f       	subi	r24, 0xFF	; 255
+ 7da:	80 93 ff 02 	sts	0x02FF, r24	; 0x8002ff <txPosition>
+ 7de:	08 95       	ret
+
+000007e0 <_Z19usart_calc_checksumv>:
+ }
+
+ bool usart_calc_checksum(void){
+		bool checkSumOK = false; 
+		uint8_t checkSum = 0;
+		for(int ii = 0; ii < rxLength - 1; ii++){
+ 7e0:	20 e0       	ldi	r18, 0x00	; 0
+ 7e2:	30 e0       	ldi	r19, 0x00	; 0
+		
+ }
+
+ bool usart_calc_checksum(void){
+		bool checkSumOK = false; 
+		uint8_t checkSum = 0;
+ 7e4:	40 e0       	ldi	r20, 0x00	; 0
+		for(int ii = 0; ii < rxLength - 1; ii++){
+ 7e6:	80 91 02 03 	lds	r24, 0x0302	; 0x800302 <rxLength>
+ 7ea:	90 e0       	ldi	r25, 0x00	; 0
+ 7ec:	01 97       	sbiw	r24, 0x01	; 1
+ 7ee:	28 17       	cp	r18, r24
+ 7f0:	39 07       	cpc	r19, r25
+ 7f2:	44 f4       	brge	.+16     	; 0x804 <_Z19usart_calc_checksumv+0x24>
+			checkSum += recieveBuffer[ii]; // calculate checksum
+ 7f4:	f9 01       	movw	r30, r18
+ 7f6:	ee 5f       	subi	r30, 0xFE	; 254
+ 7f8:	fb 4f       	sbci	r31, 0xFB	; 251
+ 7fa:	80 81       	ld	r24, Z
+ 7fc:	48 0f       	add	r20, r24
+ }
+
+ bool usart_calc_checksum(void){
+		bool checkSumOK = false; 
+		uint8_t checkSum = 0;
+		for(int ii = 0; ii < rxLength - 1; ii++){
+ 7fe:	2f 5f       	subi	r18, 0xFF	; 255
+ 800:	3f 4f       	sbci	r19, 0xFF	; 255
+ 802:	f1 cf       	rjmp	.-30     	; 0x7e6 <_Z19usart_calc_checksumv+0x6>
+			checkSum += recieveBuffer[ii]; // calculate checksum
+		}
+
+		if(checkSum == recieveBuffer[rxLength - 1]){
+ 804:	fc 01       	movw	r30, r24
+ 806:	ee 5f       	subi	r30, 0xFE	; 254
+ 808:	fb 4f       	sbci	r31, 0xFB	; 251
+ 80a:	80 81       	ld	r24, Z
+ 80c:	48 17       	cp	r20, r24
+ 80e:	11 f0       	breq	.+4      	; 0x814 <_Z19usart_calc_checksumv+0x34>
+		rxLength = 0;
+		
+ }
+
+ bool usart_calc_checksum(void){
+		bool checkSumOK = false; 
+ 810:	80 e0       	ldi	r24, 0x00	; 0
+ 812:	01 c0       	rjmp	.+2      	; 0x816 <_Z19usart_calc_checksumv+0x36>
+		for(int ii = 0; ii < rxLength - 1; ii++){
+			checkSum += recieveBuffer[ii]; // calculate checksum
+		}
+
+		if(checkSum == recieveBuffer[rxLength - 1]){
+			checkSumOK = true; // return true if checksum is correct
+ 814:	81 e0       	ldi	r24, 0x01	; 1
+		}
+		
+		rxPosition = 0; // reset length
+ 816:	10 92 00 03 	sts	0x0300, r1	; 0x800300 <rxPosition>
+		return checkSumOK;
+ }
+ 81a:	08 95       	ret
+
+0000081c <_Z22usart_message_recievedv>:
+	UCSR0B |= (1 << TXCIE0); // setup transmit interrupt
+	UDR0 = transmitBuffer[0]; // send first byte
+	txPosition++;
+ }
+
+ void usart_message_recieved(void){
+ 81c:	cf 93       	push	r28
+ 81e:	df 93       	push	r29
+	
+		if(usart_calc_checksum()){ // calculate checksum and compare
+ 820:	df df       	rcall	.-66     	; 0x7e0 <_Z19usart_calc_checksumv>
+ 822:	88 23       	and	r24, r24
+ 824:	09 f4       	brne	.+2      	; 0x828 <_Z22usart_message_recievedv+0xc>
+ 826:	fc c0       	rjmp	.+504    	; 0xa20 <_Z22usart_message_recievedv+0x204>
+			
+		
+			if(state.cartMode != (CartMode)recieveBuffer[2]){
+ 828:	90 91 aa 02 	lds	r25, 0x02AA	; 0x8002aa <state>
+ 82c:	80 91 04 04 	lds	r24, 0x0404	; 0x800404 <recieveBuffer+0x2>
+ 830:	98 17       	cp	r25, r24
+ 832:	39 f0       	breq	.+14     	; 0x842 <_Z22usart_message_recievedv+0x26>
+				state.previousCartMode = state.cartMode;
+ 834:	ea ea       	ldi	r30, 0xAA	; 170
+ 836:	f2 e0       	ldi	r31, 0x02	; 2
+ 838:	91 83       	std	Z+1, r25	; 0x01
+				state.cartMode = (CartMode)recieveBuffer[2];
+ 83a:	80 83       	st	Z, r24
+				state.cartModeChanged = true;
+ 83c:	81 e0       	ldi	r24, 0x01	; 1
+ 83e:	80 93 ef 02 	sts	0x02EF, r24	; 0x8002ef <state+0x45>
+			}
+
+			// switch to handle relevant cart mode message format
+			switch(state.cartMode){
+ 842:	20 91 aa 02 	lds	r18, 0x02AA	; 0x8002aa <state>
+ 846:	82 2f       	mov	r24, r18
+ 848:	90 e0       	ldi	r25, 0x00	; 0
+ 84a:	87 30       	cpi	r24, 0x07	; 7
+ 84c:	91 05       	cpc	r25, r1
+ 84e:	08 f0       	brcs	.+2      	; 0x852 <_Z22usart_message_recievedv+0x36>
+ 850:	dc c0       	rjmp	.+440    	; 0xa0a <_Z22usart_message_recievedv+0x1ee>
+ 852:	fc 01       	movw	r30, r24
+ 854:	88 27       	eor	r24, r24
+ 856:	ee 58       	subi	r30, 0x8E	; 142
+ 858:	ff 4f       	sbci	r31, 0xFF	; 255
+ 85a:	8f 4f       	sbci	r24, 0xFF	; 255
+ 85c:	0f c1       	rjmp	.+542    	; 0xa7c <__tablejump2__>
+				
+				// this case not used on controller side, added just for PC code clarity
+				case unavailable:
+					usart_send_string("UNAVAILABLE\r\n"); // this here just in case of errors, micro should never be in this mode.
+ 85e:	80 e0       	ldi	r24, 0x00	; 0
+ 860:	92 e0       	ldi	r25, 0x02	; 2
+ 862:	51 df       	rcall	.-350    	; 0x706 <_Z17usart_send_stringPc>
+				break;
+				
+				case standby:
+					// message format = startByte, msgLength, controlMode, checksum
+					usart_send_string("STANDBY MODE\r\n"); // send OK signal
+ 864:	e0 c0       	rjmp	.+448    	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+ 866:	8e e0       	ldi	r24, 0x0E	; 14
+ 868:	92 e0       	ldi	r25, 0x02	; 2
+				break;
+ 86a:	4d df       	rcall	.-358    	; 0x706 <_Z17usart_send_stringPc>
+				
+				case manual:
+					// message format = startByte, msgLength, controlMode, DACLeftValue, DACRightValue, checksum
+					usart_send_string("MANUAL MODE\r\n"); // send OK signal
+ 86c:	dc c0       	rjmp	.+440    	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+ 86e:	8d e1       	ldi	r24, 0x1D	; 29
+ 870:	92 e0       	ldi	r25, 0x02	; 2
+				break;
+ 872:	49 df       	rcall	.-366    	; 0x706 <_Z17usart_send_stringPc>
+				case autoLineFollow:
+					// incoming message format = startByte, msgLength, controlMode, checksum
+
+					// outgoing message format = byte message start, message length, control byte, left sensor high byte, left sensor low byte,
+					// right sensor high byte, right sensor low byte, left DAC value, right DAC value 
+					usart_send_string("LINE FOLLOW MODE\r\n"); // send OK signal
+ 874:	d8 c0       	rjmp	.+432    	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+ 876:	8b e2       	ldi	r24, 0x2B	; 43
+ 878:	92 e0       	ldi	r25, 0x02	; 2
+				break;
+				
+				case tuning:
+					// message format = startByte, msgLength, controlMode, DACLeftValue, DACRightValue, kP, kI, kD, checksum
+					setDACLeft_Value(recieveBuffer[3]);
+ 87a:	45 df       	rcall	.-374    	; 0x706 <_Z17usart_send_stringPc>
+ 87c:	d4 c0       	rjmp	.+424    	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+ 87e:	c2 e0       	ldi	r28, 0x02	; 2
+ 880:	d4 e0       	ldi	r29, 0x04	; 4
+ 882:	8b 81       	ldd	r24, Y+3	; 0x03
+					setDACRight_Value(recieveBuffer[4]);
+ 884:	65 dd       	rcall	.-1334   	; 0x350 <_Z16setDACLeft_Valueh>
+ 886:	8c 81       	ldd	r24, Y+4	; 0x04
+ 888:	aa dd       	rcall	.-1196   	; 0x3de <_Z17setDACRight_Valueh>
+					state.leftPID.kP = recieveBuffer[5];
+ 88a:	8d 81       	ldd	r24, Y+5	; 0x05
+ 88c:	ea ea       	ldi	r30, 0xAA	; 170
+ 88e:	f2 e0       	ldi	r31, 0x02	; 2
+ 890:	80 87       	std	Z+8, r24	; 0x08
+					state.rightPID.kP = recieveBuffer[5];
+ 892:	87 a3       	std	Z+39, r24	; 0x27
+					state.leftPID.kI = recieveBuffer[6];
+ 894:	8e 81       	ldd	r24, Y+6	; 0x06
+ 896:	81 87       	std	Z+9, r24	; 0x09
+					state.rightPID.kI = recieveBuffer[6];
+ 898:	80 a7       	std	Z+40, r24	; 0x28
+					state.leftPID.kD = recieveBuffer[7];
+ 89a:	9f 81       	ldd	r25, Y+7	; 0x07
+ 89c:	92 87       	std	Z+10, r25	; 0x0a
+					state.rightPID.kD = recieveBuffer[7];
+ 89e:	91 a7       	std	Z+41, r25	; 0x29
+					// also need to update kidt
+					state.leftPID.kIDt = state.leftPID.kI * state.leftPID.Dt;
+ 8a0:	90 e0       	ldi	r25, 0x00	; 0
+ 8a2:	43 85       	ldd	r20, Z+11	; 0x0b
+ 8a4:	48 9f       	mul	r20, r24
+ 8a6:	90 01       	movw	r18, r0
+ 8a8:	49 9f       	mul	r20, r25
+ 8aa:	30 0d       	add	r19, r0
+ 8ac:	11 24       	eor	r1, r1
+ 8ae:	35 87       	std	Z+13, r19	; 0x0d
+ 8b0:	24 87       	std	Z+12, r18	; 0x0c
+					state.rightPID.kIDt = state.rightPID.kI * state.rightPID.Dt;  
+ 8b2:	42 a5       	ldd	r20, Z+42	; 0x2a
+ 8b4:	48 9f       	mul	r20, r24
+ 8b6:	90 01       	movw	r18, r0
+ 8b8:	49 9f       	mul	r20, r25
+ 8ba:	30 0d       	add	r19, r0
+ 8bc:	11 24       	eor	r1, r1
+ 8be:	34 a7       	std	Z+44, r19	; 0x2c
+					usart_send_string("TUNING MODE\r\n"); // send OK signal
+ 8c0:	23 a7       	std	Z+43, r18	; 0x2b
+ 8c2:	8e e3       	ldi	r24, 0x3E	; 62
+ 8c4:	92 e0       	ldi	r25, 0x02	; 2
+ 8c6:	1f df       	rcall	.-450    	; 0x706 <_Z17usart_send_stringPc>
+				break;
+ 8c8:	ae c0       	rjmp	.+348    	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+
+				case saveData:
+					// message format = startByte, msgLength, controlMode, memory location, kP, kI, kD, checksum
+
+					// message format = startByte, msgLength, controlMode, memory location, checksum
+					state.currentMemAddress = recieveBuffer[3];
+ 8ca:	80 91 05 04 	lds	r24, 0x0405	; 0x800405 <recieveBuffer+0x3>
+ 8ce:	48 2f       	mov	r20, r24
+ 8d0:	50 e0       	ldi	r21, 0x00	; 0
+ 8d2:	50 93 eb 02 	sts	0x02EB, r21	; 0x8002eb <state+0x41>
+ 8d6:	40 93 ea 02 	sts	0x02EA, r20	; 0x8002ea <state+0x40>
+					
+					// this switch sets the memory location in EEPROM
+					switch(recieveBuffer[3]){
+ 8da:	81 30       	cpi	r24, 0x01	; 1
+ 8dc:	71 f0       	breq	.+28     	; 0x8fa <_Z22usart_message_recievedv+0xde>
+ 8de:	28 f0       	brcs	.+10     	; 0x8ea <_Z22usart_message_recievedv+0xce>
+ 8e0:	82 30       	cpi	r24, 0x02	; 2
+ 8e2:	a9 f0       	breq	.+42     	; 0x90e <_Z22usart_message_recievedv+0xf2>
+ 8e4:	83 30       	cpi	r24, 0x03	; 3
+ 8e6:	e9 f0       	breq	.+58     	; 0x922 <_Z22usart_message_recievedv+0x106>
+ 8e8:	26 c0       	rjmp	.+76     	; 0x936 <_Z22usart_message_recievedv+0x11a>
+
+						case 0:
+							state.currentMemAddress = MEM_LOCATION_0;
+ 8ea:	10 92 eb 02 	sts	0x02EB, r1	; 0x8002eb <state+0x41>
+ 8ee:	10 92 ea 02 	sts	0x02EA, r1	; 0x8002ea <state+0x40>
+							state.saveDataToEEPROM = true;
+ 8f2:	81 e0       	ldi	r24, 0x01	; 1
+ 8f4:	80 93 f0 02 	sts	0x02F0, r24	; 0x8002f0 <state+0x46>
+						break;
+ 8f8:	28 c0       	rjmp	.+80     	; 0x94a <_Z22usart_message_recievedv+0x12e>
+
+						case 1:
+							state.currentMemAddress = MEM_LOCATION_1;
+ 8fa:	84 e1       	ldi	r24, 0x14	; 20
+ 8fc:	90 e0       	ldi	r25, 0x00	; 0
+ 8fe:	90 93 eb 02 	sts	0x02EB, r25	; 0x8002eb <state+0x41>
+ 902:	80 93 ea 02 	sts	0x02EA, r24	; 0x8002ea <state+0x40>
+							state.saveDataToEEPROM = true;
+ 906:	81 e0       	ldi	r24, 0x01	; 1
+ 908:	80 93 f0 02 	sts	0x02F0, r24	; 0x8002f0 <state+0x46>
+						break;
+ 90c:	1e c0       	rjmp	.+60     	; 0x94a <_Z22usart_message_recievedv+0x12e>
+
+						case 2:
+							state.currentMemAddress = MEM_LOCATION_2;
+ 90e:	88 e2       	ldi	r24, 0x28	; 40
+ 910:	90 e0       	ldi	r25, 0x00	; 0
+ 912:	90 93 eb 02 	sts	0x02EB, r25	; 0x8002eb <state+0x41>
+ 916:	80 93 ea 02 	sts	0x02EA, r24	; 0x8002ea <state+0x40>
+							state.saveDataToEEPROM = true;
+ 91a:	81 e0       	ldi	r24, 0x01	; 1
+ 91c:	80 93 f0 02 	sts	0x02F0, r24	; 0x8002f0 <state+0x46>
+						break;
+ 920:	14 c0       	rjmp	.+40     	; 0x94a <_Z22usart_message_recievedv+0x12e>
+
+						case 3:
+							state.currentMemAddress = MEM_LOCATION_3;
+ 922:	8c e3       	ldi	r24, 0x3C	; 60
+ 924:	90 e0       	ldi	r25, 0x00	; 0
+ 926:	90 93 eb 02 	sts	0x02EB, r25	; 0x8002eb <state+0x41>
+ 92a:	80 93 ea 02 	sts	0x02EA, r24	; 0x8002ea <state+0x40>
+							state.saveDataToEEPROM = true;
+ 92e:	81 e0       	ldi	r24, 0x01	; 1
+ 930:	80 93 f0 02 	sts	0x02F0, r24	; 0x8002f0 <state+0x46>
+						break;
+ 934:	0a c0       	rjmp	.+20     	; 0x94a <_Z22usart_message_recievedv+0x12e>
+
+						default:
+							state.previousCartMode = state.cartMode;
+ 936:	ea ea       	ldi	r30, 0xAA	; 170
+ 938:	f2 e0       	ldi	r31, 0x02	; 2
+							state.cartMode = standby;
+ 93a:	21 83       	std	Z+1, r18	; 0x01
+ 93c:	81 e0       	ldi	r24, 0x01	; 1
+							state.cartModeChanged = true;
+ 93e:	80 83       	st	Z, r24
+ 940:	80 93 ef 02 	sts	0x02EF, r24	; 0x8002ef <state+0x45>
+							usart_send_string("INVALID MEMORY ADDRESS\r\n");
+ 944:	8c e4       	ldi	r24, 0x4C	; 76
+ 946:	92 e0       	ldi	r25, 0x02	; 2
+ 948:	de de       	rcall	.-580    	; 0x706 <_Z17usart_send_stringPc>
+						break;
+					}
+
+					if(state.cartMode == saveData){
+ 94a:	80 91 aa 02 	lds	r24, 0x02AA	; 0x8002aa <state>
+ 94e:	85 30       	cpi	r24, 0x05	; 5
+ 950:	09 f0       	breq	.+2      	; 0x954 <_Z22usart_message_recievedv+0x138>
+ 952:	69 c0       	rjmp	.+210    	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+						// save the new data values to the state struct
+						state.leftPID.kP = recieveBuffer[4];
+ 954:	a2 e0       	ldi	r26, 0x02	; 2
+ 956:	b4 e0       	ldi	r27, 0x04	; 4
+ 958:	14 96       	adiw	r26, 0x04	; 4
+ 95a:	8c 91       	ld	r24, X
+ 95c:	14 97       	sbiw	r26, 0x04	; 4
+ 95e:	ea ea       	ldi	r30, 0xAA	; 170
+ 960:	f2 e0       	ldi	r31, 0x02	; 2
+ 962:	80 87       	std	Z+8, r24	; 0x08
+						state.rightPID.kP = recieveBuffer[4];
+ 964:	87 a3       	std	Z+39, r24	; 0x27
+						state.leftPID.kI = recieveBuffer[5];
+ 966:	15 96       	adiw	r26, 0x05	; 5
+ 968:	8c 91       	ld	r24, X
+ 96a:	15 97       	sbiw	r26, 0x05	; 5
+ 96c:	81 87       	std	Z+9, r24	; 0x09
+						state.rightPID.kI = recieveBuffer[5];
+ 96e:	80 a7       	std	Z+40, r24	; 0x28
+						state.leftPID.kD = recieveBuffer[6];
+ 970:	16 96       	adiw	r26, 0x06	; 6
+ 972:	8c 91       	ld	r24, X
+ 974:	82 87       	std	Z+10, r24	; 0x0a
+						state.rightPID.kD = recieveBuffer[6];
+ 976:	81 a7       	std	Z+41, r24	; 0x29
+ 978:	56 c0       	rjmp	.+172    	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+					}
+				break;
+
+				case loadData:
+					// message format = startByte, msgLength, controlMode, memory location, checksum
+					state.currentMemAddress = recieveBuffer[3];
+ 97a:	80 91 05 04 	lds	r24, 0x0405	; 0x800405 <recieveBuffer+0x3>
+ 97e:	48 2f       	mov	r20, r24
+ 980:	50 e0       	ldi	r21, 0x00	; 0
+ 982:	50 93 eb 02 	sts	0x02EB, r21	; 0x8002eb <state+0x41>
+ 986:	40 93 ea 02 	sts	0x02EA, r20	; 0x8002ea <state+0x40>
+					
+					// this switch sets the memory location in EEPROM
+					switch(recieveBuffer[3]){
+ 98a:	81 30       	cpi	r24, 0x01	; 1
+ 98c:	71 f0       	breq	.+28     	; 0x9aa <_Z22usart_message_recievedv+0x18e>
+ 98e:	28 f0       	brcs	.+10     	; 0x99a <_Z22usart_message_recievedv+0x17e>
+ 990:	82 30       	cpi	r24, 0x02	; 2
+ 992:	a9 f0       	breq	.+42     	; 0x9be <_Z22usart_message_recievedv+0x1a2>
+ 994:	83 30       	cpi	r24, 0x03	; 3
+ 996:	e9 f0       	breq	.+58     	; 0x9d2 <_Z22usart_message_recievedv+0x1b6>
+ 998:	26 c0       	rjmp	.+76     	; 0x9e6 <_Z22usart_message_recievedv+0x1ca>
+
+						case 0:
+							state.currentMemAddress = MEM_LOCATION_0;
+ 99a:	10 92 eb 02 	sts	0x02EB, r1	; 0x8002eb <state+0x41>
+ 99e:	10 92 ea 02 	sts	0x02EA, r1	; 0x8002ea <state+0x40>
+							state.loadDataFromEEPROM = true;
+ 9a2:	81 e0       	ldi	r24, 0x01	; 1
+ 9a4:	80 93 f1 02 	sts	0x02F1, r24	; 0x8002f1 <state+0x47>
+						break;
+ 9a8:	28 c0       	rjmp	.+80     	; 0x9fa <_Z22usart_message_recievedv+0x1de>
+
+						case 1:
+							state.currentMemAddress = MEM_LOCATION_1;
+ 9aa:	84 e1       	ldi	r24, 0x14	; 20
+ 9ac:	90 e0       	ldi	r25, 0x00	; 0
+ 9ae:	90 93 eb 02 	sts	0x02EB, r25	; 0x8002eb <state+0x41>
+ 9b2:	80 93 ea 02 	sts	0x02EA, r24	; 0x8002ea <state+0x40>
+							state.loadDataFromEEPROM = true;
+ 9b6:	81 e0       	ldi	r24, 0x01	; 1
+ 9b8:	80 93 f1 02 	sts	0x02F1, r24	; 0x8002f1 <state+0x47>
+						break;
+ 9bc:	1e c0       	rjmp	.+60     	; 0x9fa <_Z22usart_message_recievedv+0x1de>
+
+						case 2:
+							state.currentMemAddress = MEM_LOCATION_2;
+ 9be:	88 e2       	ldi	r24, 0x28	; 40
+ 9c0:	90 e0       	ldi	r25, 0x00	; 0
+ 9c2:	90 93 eb 02 	sts	0x02EB, r25	; 0x8002eb <state+0x41>
+ 9c6:	80 93 ea 02 	sts	0x02EA, r24	; 0x8002ea <state+0x40>
+							state.loadDataFromEEPROM = true;
+ 9ca:	81 e0       	ldi	r24, 0x01	; 1
+ 9cc:	80 93 f1 02 	sts	0x02F1, r24	; 0x8002f1 <state+0x47>
+						break;
+ 9d0:	14 c0       	rjmp	.+40     	; 0x9fa <_Z22usart_message_recievedv+0x1de>
+
+						case 3:
+							state.currentMemAddress = MEM_LOCATION_3;
+ 9d2:	8c e3       	ldi	r24, 0x3C	; 60
+ 9d4:	90 e0       	ldi	r25, 0x00	; 0
+ 9d6:	90 93 eb 02 	sts	0x02EB, r25	; 0x8002eb <state+0x41>
+ 9da:	80 93 ea 02 	sts	0x02EA, r24	; 0x8002ea <state+0x40>
+							state.loadDataFromEEPROM = true;
+ 9de:	81 e0       	ldi	r24, 0x01	; 1
+ 9e0:	80 93 f1 02 	sts	0x02F1, r24	; 0x8002f1 <state+0x47>
+						break;
+
+						default:
+							state.previousCartMode = state.cartMode;
+ 9e4:	0a c0       	rjmp	.+20     	; 0x9fa <_Z22usart_message_recievedv+0x1de>
+ 9e6:	ea ea       	ldi	r30, 0xAA	; 170
+ 9e8:	f2 e0       	ldi	r31, 0x02	; 2
+							state.cartMode = standby;
+ 9ea:	21 83       	std	Z+1, r18	; 0x01
+ 9ec:	81 e0       	ldi	r24, 0x01	; 1
+							state.cartModeChanged = true;
+ 9ee:	80 83       	st	Z, r24
+							usart_send_string("INVALID MEMORY ADDRESS\r\n");
+ 9f0:	80 93 ef 02 	sts	0x02EF, r24	; 0x8002ef <state+0x45>
+ 9f4:	8c e4       	ldi	r24, 0x4C	; 76
+ 9f6:	92 e0       	ldi	r25, 0x02	; 2
+						break;
+
+					}
+					if(state.cartMode == loadData){
+ 9f8:	86 de       	rcall	.-756    	; 0x706 <_Z17usart_send_stringPc>
+ 9fa:	80 91 aa 02 	lds	r24, 0x02AA	; 0x8002aa <state>
+ 9fe:	86 30       	cpi	r24, 0x06	; 6
+						usart_send_string("LOADING DATA\r\n"); // send OK signal
+ a00:	91 f4       	brne	.+36     	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+ a02:	85 e6       	ldi	r24, 0x65	; 101
+ a04:	92 e0       	ldi	r25, 0x02	; 2
+ a06:	7f de       	rcall	.-770    	; 0x706 <_Z17usart_send_stringPc>
+					}
+				break;
+
+				default:
+					state.previousCartMode = standby;
+ a08:	0e c0       	rjmp	.+28     	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+ a0a:	ea ea       	ldi	r30, 0xAA	; 170
+ a0c:	f2 e0       	ldi	r31, 0x02	; 2
+					state.cartMode = standby;
+ a0e:	81 e0       	ldi	r24, 0x01	; 1
+					state.cartModeChanged = true;
+ a10:	81 83       	std	Z+1, r24	; 0x01
+ a12:	80 83       	st	Z, r24
+					usart_send_string("CART MODE ERROR\r\n"); // send OK signal
+ a14:	80 93 ef 02 	sts	0x02EF, r24	; 0x8002ef <state+0x45>
+ a18:	84 e7       	ldi	r24, 0x74	; 116
+ a1a:	92 e0       	ldi	r25, 0x02	; 2
+				break;
+ a1c:	74 de       	rcall	.-792    	; 0x706 <_Z17usart_send_stringPc>
+			}
+		}
+
+		// case for serial error, send the message back. 
+		else{
+			usart_send_string("CHECK SUM ERROR\r\n"); // send checksum error signal
+ a1e:	03 c0       	rjmp	.+6      	; 0xa26 <_Z22usart_message_recievedv+0x20a>
+ a20:	86 e8       	ldi	r24, 0x86	; 134
+ a22:	92 e0       	ldi	r25, 0x02	; 2
+ a24:	70 de       	rcall	.-800    	; 0x706 <_Z17usart_send_stringPc>
+			rxLength = 0;
+		}
+
+		state.messageRecieved = false; // reset the message flag
+ a26:	10 92 ed 02 	sts	0x02ED, r1	; 0x8002ed <state+0x43>
+		rxPosition = 0;
+ a2a:	10 92 00 03 	sts	0x0300, r1	; 0x800300 <rxPosition>
+		rxLength = 0;
+ a2e:	10 92 02 03 	sts	0x0302, r1	; 0x800302 <rxLength>
+		
+ }
+ a32:	df 91       	pop	r29
+ a34:	cf 91       	pop	r28
+ a36:	08 95       	ret
+
+00000a38 <__udivmodsi4>:
+ a38:	a1 e2       	ldi	r26, 0x21	; 33
+ a3a:	1a 2e       	mov	r1, r26
+ a3c:	aa 1b       	sub	r26, r26
+ a3e:	bb 1b       	sub	r27, r27
+ a40:	fd 01       	movw	r30, r26
+ a42:	0d c0       	rjmp	.+26     	; 0xa5e <__udivmodsi4_ep>
+
+00000a44 <__udivmodsi4_loop>:
+ a44:	aa 1f       	adc	r26, r26
+ a46:	bb 1f       	adc	r27, r27
+ a48:	ee 1f       	adc	r30, r30
+ a4a:	ff 1f       	adc	r31, r31
+ a4c:	a2 17       	cp	r26, r18
+ a4e:	b3 07       	cpc	r27, r19
+ a50:	e4 07       	cpc	r30, r20
+ a52:	f5 07       	cpc	r31, r21
+ a54:	20 f0       	brcs	.+8      	; 0xa5e <__udivmodsi4_ep>
+ a56:	a2 1b       	sub	r26, r18
+ a58:	b3 0b       	sbc	r27, r19
+ a5a:	e4 0b       	sbc	r30, r20
+ a5c:	f5 0b       	sbc	r31, r21
+
+00000a5e <__udivmodsi4_ep>:
+ a5e:	66 1f       	adc	r22, r22
+ a60:	77 1f       	adc	r23, r23
+ a62:	88 1f       	adc	r24, r24
+ a64:	99 1f       	adc	r25, r25
+ a66:	1a 94       	dec	r1
+ a68:	69 f7       	brne	.-38     	; 0xa44 <__udivmodsi4_loop>
+ a6a:	60 95       	com	r22
+ a6c:	70 95       	com	r23
+ a6e:	80 95       	com	r24
+ a70:	90 95       	com	r25
+ a72:	9b 01       	movw	r18, r22
+ a74:	ac 01       	movw	r20, r24
+ a76:	bd 01       	movw	r22, r26
+ a78:	cf 01       	movw	r24, r30
+ a7a:	08 95       	ret
+
+00000a7c <__tablejump2__>:
+ a7c:	ee 0f       	add	r30, r30
+ a7e:	ff 1f       	adc	r31, r31
+ a80:	88 1f       	adc	r24, r24
+ a82:	8b bf       	out	0x3b, r24	; 59
+ a84:	07 90       	elpm	r0, Z+
+ a86:	f6 91       	elpm	r31, Z
+ a88:	e0 2d       	mov	r30, r0
+ a8a:	19 94       	eijmp
+
+00000a8c <_exit>:
+ a8c:	f8 94       	cli
+
+00000a8e <__stop_program>:
+ a8e:	ff cf       	rjmp	.-2      	; 0xa8e <__stop_program>

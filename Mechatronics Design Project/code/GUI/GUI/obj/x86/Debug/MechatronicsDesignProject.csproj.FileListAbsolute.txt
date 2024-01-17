@@ -1,0 +1,18 @@
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\bin\Debug\SerialIO.exe
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\bin\Debug\SerialIO.pdb
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\obj\x86\Debug\MechatronicsDesignProject.csproj.AssemblyReference.cache
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\obj\x86\Debug\SerialGUISample.Form1.resources
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\obj\x86\Debug\SerialGUISample.Properties.Resources.resources
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\obj\x86\Debug\MechatronicsDesignProject.csproj.GenerateResource.cache
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\obj\x86\Debug\MechatronicsDesignProject.csproj.CoreCompileInputs.cache
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\obj\x86\Debug\SerialIO.exe
+C:\Users\ed\Desktop\Serial_IO_4byte_Example\SerialIO_GUI_Sample_2016_4byte\SerialIO_GUI_Sample_2016_4byte\obj\x86\Debug\SerialIO.pdb
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\bin\Debug\SerialIO.exe
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\bin\Debug\SerialIO.pdb
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\obj\x86\Debug\MechatronicsDesignProject.csproj.AssemblyReference.cache
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\obj\x86\Debug\SerialGUISample.Form1.resources
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\obj\x86\Debug\SerialGUISample.Properties.Resources.resources
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\obj\x86\Debug\MechatronicsDesignProject.csproj.GenerateResource.cache
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\obj\x86\Debug\MechatronicsDesignProject.csproj.CoreCompileInputs.cache
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\obj\x86\Debug\SerialIO.exe
+D:\resume_stuff_albys_laptop\Mech design project code\GUI\GUI\obj\x86\Debug\SerialIO.pdb
