@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dataFragment"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".DataFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+
+            <TextView
+                android:id="@+id/monthData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MONTH"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/monthHeading" />
+
+            <TextView
+                android:id="@+id/monthHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MONTH"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/monthData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+
+            <TextView
+                android:id="@+id/yearData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YEAR"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yearHeading" />
+
+            <TextView
+                android:id="@+id/yearHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YEAR"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/yearData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+
+            <TextView
+                android:id="@+id/moneyData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MONEY"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/moneyHeading" />
+
+            <TextView
+                android:id="@+id/moneyHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MONEY"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/moneyData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+
+            <TextView
+                android:id="@+id/incomeData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INCOME"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/incomeHeading" />
+
+            <TextView
+                android:id="@+id/incomeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INCOME"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/incomeData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+
+            <TextView
+                android:id="@+id/populationData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POP"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/populationHeading" />
+
+            <TextView
+                android:id="@+id/populationHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POP"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/populationData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+
+            <TextView
+                android:id="@+id/employmentData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMPLOYMENT"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/employmentHeading" />
+
+            <TextView
+                android:id="@+id/employmentHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMPLOYMENT"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/employmentData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+
+            <TextView
+                android:id="@+id/cityData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CITY"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cityHeading" />
+
+            <TextView
+                android:id="@+id/cityHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CITY"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/cityData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+
+            <TextView
+                android:id="@+id/temperatureData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEMPERATURE"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temperatureHeading" />
+
+            <TextView
+                android:id="@+id/temperatureHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEMPERATURE"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/temperatureData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,22 @@
+
+code adapted from the following learning resources:
+
+Communication between fragments and recyclerView:
+
+Johan Jurrius:
+Fragments with RecyclerView
+ https://www.youtube.com/watch?v=pAHWvjg1ky0&t=557s
+
+coding in flow architecture series:
+"Room + ViewModel + LiveData + RecyclerView (MVVM) Part 1 - WHAT ARE ANDROID ARCHITECTURE COMPONENTS?"
+https://www.youtube.com/watch?v=ARpn-1FPNE4&t=155s
+
+get instance of a fragment
+https://stackoverflow.com/questions/38210333/android-get-actual-instance-of-a-fragment
+
+get screen orientation:
+https://stackoverflow.com/questions/3663665/how-can-i-get-the-current-screen-orientation
+
+restore fragments after screen rotation (not required in the end)
+https://medium.com/hootsuite-engineering/handling-orientation-changes-on-android-41a6b62cb43f
+

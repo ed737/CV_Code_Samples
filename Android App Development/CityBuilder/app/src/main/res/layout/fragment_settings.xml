@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SettingsFragment">
+
+
+    <EditText
+        android:id="@+id/txtPlayerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtMapWidth"
+        app:layout_constraintEnd_toStartOf="@+id/txtMapHeight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMapWidth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Map Width"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtStartMoney"
+        app:layout_constraintEnd_toStartOf="@+id/txtMapHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/citySelect" />
+
+    <EditText
+        android:id="@+id/txtMapHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Map Height"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtFamilySize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtMapWidth"
+        app:layout_constraintTop_toBottomOf="@+id/citySelect" />
+
+    <EditText
+        android:id="@+id/txtStartMoney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Starting Money"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtShopSize"
+        app:layout_constraintEnd_toStartOf="@+id/txtFamilySize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMapWidth" />
+
+    <EditText
+        android:id="@+id/txtFamilySize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Family Size"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtSalary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtStartMoney"
+        app:layout_constraintTop_toBottomOf="@+id/txtMapHeight" />
+
+    <EditText
+        android:id="@+id/txtShopSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Shop Size"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtTaxRate"
+        app:layout_constraintEnd_toStartOf="@+id/txtSalary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStartMoney" />
+
+    <EditText
+        android:id="@+id/txtSalary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Salary"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtServiceCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtShopSize"
+        app:layout_constraintTop_toBottomOf="@+id/txtFamilySize" />
+
+    <EditText
+        android:id="@+id/txtTaxRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tax Rate"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/txtHouseBuildingCost"
+        app:layout_constraintEnd_toStartOf="@+id/txtServiceCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShopSize" />
+
+    <EditText
+        android:id="@+id/txtServiceCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Service Cost"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtCommBuildingCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTaxRate"
+        app:layout_constraintTop_toBottomOf="@+id/txtSalary" />
+
+    <EditText
+        android:id="@+id/txtHouseBuildingCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="House Cost"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtRoadCost"
+        app:layout_constraintEnd_toStartOf="@+id/txtCommBuildingCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTaxRate" />
+
+    <EditText
+        android:id="@+id/txtCommBuildingCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Commercial Cost"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtRoadCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtHouseBuildingCost"
+        app:layout_constraintTop_toBottomOf="@+id/txtServiceCost" />
+
+    <EditText
+        android:id="@+id/txtRoadCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Road Cost"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txt_input_error_settings"
+        app:layout_constraintEnd_toStartOf="@+id/button_settings_done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHouseBuildingCost" />
+
+    <Button
+        android:id="@+id/button_settings_done"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="BEGIN"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRoadCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtRoadCost"
+        app:layout_constraintTop_toTopOf="@+id/txtRoadCost" />
+
+    <TextView
+        android:id="@+id/txt_input_error_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRoadCost" />
+
+    <Spinner
+        android:id="@+id/citySelect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@android:array/emailAddressTypes"
+        app:layout_constraintBottom_toTopOf="@+id/txtMapHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPlayerName"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fun With Flags</string>
+    <string name="start">Start</string>
+    <string name="fun_with_flags">Fun With Flags</string>
+    <string name="blank"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

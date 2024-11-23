@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CityBuilder</string>
+    <string name="city_builder">City Builder</string>
+    <string name="by_edward_munns">By Edward Munns</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
